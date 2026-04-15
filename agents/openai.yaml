@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Like Mike"
+  short_description: "Write and revise prose in Mike's voice"
+  default_prompt: "Use $write-like-mike to draft or revise emails, messages, docs, memos, plans, comments, and concise updates in Mike's voice while preserving facts and privacy."
