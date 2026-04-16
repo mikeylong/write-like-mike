@@ -26,7 +26,7 @@ MEMORY_TOOL_RE = re.compile(
     re.IGNORECASE,
 )
 GMAIL_PARTS = ("mail.", "google.", "com/mail")
-TEXT_SUFFIXES = {".md", ".yaml", ".yml", ".txt"}
+TEXT_SUFFIXES = {".json", ".md", ".yaml", ".yml", ".txt"}
 
 
 def iter_files(root: Path) -> list[Path]:

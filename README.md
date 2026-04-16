@@ -27,3 +27,21 @@ python3 /Users/mike/SkillSkill/scripts/validate_skill.py --expect-codex /Users/m
 /Users/mike/.codex/skills/write-like-mike/scripts/check_privacy.py /Users/mike/.codex/skills/write-like-mike
 python3 -m py_compile /Users/mike/.codex/skills/write-like-mike/scripts/check_privacy.py
 ```
+
+## Eval Workflow
+
+The reusable eval suite lives in `evals/` and uses synthetic prompts only.
+
+Generate a blank report template:
+
+```bash
+python3 scripts/run_eval.py > evals/reports/YYYY-MM-DD.md
+```
+
+After filling in case outputs and scores, validate the report:
+
+```bash
+python3 scripts/run_eval.py --report evals/reports/YYYY-MM-DD.md
+```
+
+The eval passes when the aggregate score is at least 85%, there are no hard failures, and the package privacy check passes.

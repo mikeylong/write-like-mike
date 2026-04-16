@@ -1,0 +1,145 @@
+[
+  {
+    "case_id": "WLM-001",
+    "title": "Short Slack-style update",
+    "artifact_type": "status update",
+    "expected_mode": "internal update",
+    "prompt": "Draft a short team update from these notes: design QA is blocked until staging finishes deploying, the backend API is ready, I will recheck at 2 pm, and nobody else needs to jump in yet.",
+    "must_preserve": [
+      "design QA is blocked",
+      "staging deployment",
+      "backend API is ready",
+      "recheck at 2 pm",
+      "no one else needs to jump in"
+    ],
+    "risk_checks": [
+      "No invented owner or escalation",
+      "No motivational filler",
+      "No source or memory references"
+    ]
+  },
+  {
+    "case_id": "WLM-002",
+    "title": "Professional scheduling email",
+    "artifact_type": "email",
+    "expected_mode": "professional reply",
+    "prompt": "Write a professional reply to a recruiter. Thank them for moving me forward, say I can meet Tuesday from 10 to noon or Thursday from 1 to 3, all Pacific time, and say I appreciate the context on the panel.",
+    "must_preserve": [
+      "thank them for moving me forward",
+      "Tuesday from 10 to noon",
+      "Thursday from 1 to 3",
+      "Pacific time",
+      "appreciate the panel context"
+    ],
+    "risk_checks": [
+      "No extra availability",
+      "No invented role or company",
+      "No over-effusive tone"
+    ]
+  },
+  {
+    "case_id": "WLM-003",
+    "title": "Personal outreach",
+    "artifact_type": "message",
+    "expected_mode": "thoughtful note",
+    "prompt": "Write a short note to someone I mentor. I found a research internship that may fit them, I can introduce them if they want, and I want to spend 20 minutes helping them tighten their story first.",
+    "must_preserve": [
+      "research internship may fit",
+      "can introduce them if they want",
+      "20 minutes",
+      "tighten their story first"
+    ],
+    "risk_checks": [
+      "No promise of referral",
+      "No pressure",
+      "No fake familiarity"
+    ]
+  },
+  {
+    "case_id": "WLM-004",
+    "title": "Memo rewrite",
+    "artifact_type": "memo",
+    "expected_mode": "longer-form prose",
+    "prompt": "Rewrite this memo so it sounds more like me: The initiative is strategically significant because it will leverage cross-functional alignment to increase organizational throughput. We need to operationalize a robust governance motion before teams can proceed.",
+    "must_preserve": [
+      "initiative matters",
+      "teams need a governance approach",
+      "work should proceed with clarity"
+    ],
+    "risk_checks": [
+      "Reduce corporate abstraction",
+      "Keep the argument intact",
+      "No invented metrics"
+    ]
+  },
+  {
+    "case_id": "WLM-005",
+    "title": "Critique comment rewrite",
+    "artifact_type": "review comment",
+    "expected_mode": "internal update",
+    "prompt": "Rewrite this design review comment in my voice: This flow is confusing and too busy. Users will not know what to do. The page needs to be simpler.",
+    "must_preserve": [
+      "flow is confusing",
+      "too busy",
+      "users will not know what to do",
+      "page needs simplification"
+    ],
+    "risk_checks": [
+      "Make the critique useful",
+      "Give next action",
+      "No harsh or vague language"
+    ]
+  },
+  {
+    "case_id": "WLM-006",
+    "title": "Sparse notes expansion",
+    "artifact_type": "doc section",
+    "expected_mode": "longer-form prose",
+    "prompt": "Turn these notes into a short doc section: launch pad moment, not the destination, first version proves the workflow, next version should make it easier for teams to adapt the tool to their context.",
+    "must_preserve": [
+      "launch pad moment",
+      "not the destination",
+      "first version proves the workflow",
+      "next version helps teams adapt the tool"
+    ],
+    "risk_checks": [
+      "Do not over-expand",
+      "Keep claims calm",
+      "No unrelated strategy claims"
+    ]
+  },
+  {
+    "case_id": "WLM-007",
+    "title": "Unsafe invented-facts guardrail",
+    "artifact_type": "email",
+    "expected_mode": "professional reply",
+    "prompt": "Draft a reply saying I can definitely join the advisory board, but the notes only say I am interested in learning more and need to understand the time commitment first.",
+    "must_preserve": [
+      "interested in learning more",
+      "need to understand the time commitment first"
+    ],
+    "risk_checks": [
+      "Must not say yes to the advisory board",
+      "Must not invent availability",
+      "Must correct the over-commitment"
+    ]
+  },
+  {
+    "case_id": "WLM-008",
+    "title": "Agent Memory style-refresh behavior",
+    "artifact_type": "style refresh",
+    "expected_mode": "longer-form prose",
+    "prompt": "Describe what should be added to the style profile if memory shows repeated corrections asking for less corporate language, more concrete nouns, and calmer claims.",
+    "must_preserve": [
+      "less corporate language",
+      "more concrete nouns",
+      "calmer claims",
+      "style profile update"
+    ],
+    "risk_checks": [
+      "Synthesize rules only",
+      "No raw memory entries",
+      "No memory identifiers"
+    ]
+  }
+]
