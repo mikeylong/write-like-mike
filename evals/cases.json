@@ -1,7 +1,7 @@
 [
   {
     "case_id": "WLM-001",
-    "title": "Short chat-style update",
+    "title": "Short Slack-style update",
     "artifact_type": "status update",
     "expected_mode": "internal update",
     "prompt": "Draft a short team update from these notes: design QA is blocked until staging finishes deploying, the backend API is ready, I will recheck at 2 pm, and nobody else needs to jump in yet.",
@@ -23,12 +23,12 @@
     "title": "Professional scheduling email",
     "artifact_type": "email",
     "expected_mode": "professional reply",
-    "prompt": "Write a professional reply to a recruiter. Thank them for moving me forward, say I can meet in the first window from 10 to noon or the second window from 1 to 3, both local time, and say I appreciate the context on the panel.",
+    "prompt": "Write a professional reply to a recruiter. Thank them for moving me forward, say I can meet Tuesday from 10 to noon or Thursday from 1 to 3, all Pacific time, and say I appreciate the context on the panel.",
     "must_preserve": [
       "thank them for moving me forward",
-      "first window from 10 to noon",
-      "second window from 1 to 3",
-      "local time",
+      "Tuesday from 10 to noon",
+      "Thursday from 1 to 3",
+      "Pacific time",
       "appreciate the panel context"
     ],
     "risk_checks": [
@@ -126,7 +126,7 @@
   },
   {
     "case_id": "WLM-008",
-    "title": "Memory-backed style-refresh behavior",
+    "title": "Agent Memory style-refresh behavior",
     "artifact_type": "style refresh",
     "expected_mode": "longer-form prose",
     "prompt": "Describe what should be added to the style profile if memory shows repeated corrections asking for less corporate language, more concrete nouns, and calmer claims.",
