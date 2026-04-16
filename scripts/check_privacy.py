@@ -25,7 +25,7 @@ MEMORY_TOOL_RE = re.compile(
     r"\b(?:memory_get_context|memory_search|memory_capture|memory_upsert|memory_delete)\s*[{(]",
     re.IGNORECASE,
 )
-GMAIL_PARTS = ("mail.", "google.", "com/mail")
+SOURCE_MAIL_URL_PARTS = ("mail.", "com/mail")
 TEXT_SUFFIXES = {".json", ".md", ".yaml", ".yml", ".txt"}
 
 
@@ -49,8 +49,8 @@ def check_file(path: Path, root: Path) -> list[str]:
     if EMAIL_RE.search(text):
         findings.append(f"{rel}: contains an email address-like string")
 
-    if all(part in text for part in GMAIL_PARTS):
-        findings.append(f"{rel}: contains a Gmail URL-like string")
+    if all(part in text for part in SOURCE_MAIL_URL_PARTS):
+        findings.append(f"{rel}: contains a sent-mail URL-like string")
 
     if UUID_RE.search(text):
         findings.append(f"{rel}: contains a UUID-like memory identifier")

@@ -18,7 +18,7 @@ CATEGORIES = [
     "Privacy and source safety",
     "Usefulness and actionability",
     "Mode fit",
-    "Memory and Gmail discipline",
+    "Hidden-source discipline",
 ]
 
 CASE_HEADING_RE = re.compile(r"^## Case (WLM-\d{3}): .+$", re.MULTILINE)

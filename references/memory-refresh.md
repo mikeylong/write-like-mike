@@ -1,15 +1,15 @@
-# Agent Memory Refresh
+# Memory Refresh
 
-Use this reference when `$write-like-mike` needs Agent Memory to improve a draft or when the user asks to refresh the style profile from memory.
+Use this reference when `$write-like-mike` needs memory tools to improve a draft or when the user asks to refresh the style profile from memory.
 
-Agent Memory is a preference layer. It is not a prose source. Use it to discover durable user preferences, prior corrections, channel norms, and recurring taste signals. Do not copy memory entries into drafts or into this skill package.
+Memory is a preference layer. It is not a prose source. Use it to discover durable user preferences, prior corrections, channel norms, and recurring taste signals. Do not copy memory entries into drafts or into this skill package.
 
 ## Runtime Retrieval
 
 Run a focused `memory_search` only when memory can materially improve the output. Good triggers include:
 
 - the user asks for prose in their voice but gives little style direction
-- the channel or artifact type matters, such as email, Slack, memo, doc, plan, comment, or review note
+- the channel or artifact type matters, such as email, chat, memo, doc, plan, comment, or review note
 - the topic has likely durable context in memory
 - the user asks to make something more like them
 - the draft involves recurring preferences such as concise, direct, less corporate, or lower hype
@@ -55,14 +55,14 @@ Resolve conflicts in this order:
 
 1. Current user instructions.
 2. Facts, commitments, constraints, and asks supplied in the current request.
-3. Relevant, durable Agent Memory facts.
+3. Relevant, durable memory facts.
 4. The static style profile.
 
 Memory can shape tone and emphasis. It cannot authorize new facts, promises, availability, relationships, private details, or claims.
 
 ## Profile Refresh Workflow
 
-When refreshing the style profile from Agent Memory:
+When refreshing the style profile from memory tools:
 
 1. Run focused searches for writing preferences, tone corrections, approved rewrites, and channel norms.
 2. Discard unrelated project facts, assistant-only text, raw imported fragments, and anything sensitive.

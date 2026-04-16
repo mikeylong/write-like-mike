@@ -1,6 +1,6 @@
 # Mike's Synthesized Style Profile
 
-This profile is a private synthesis from read-only review of sent, human-authored writing. It intentionally stores style traits only. Do not add raw message bodies, exact snippets, recipients, email addresses, Gmail links, or identifying examples.
+This profile is a private synthesis from read-only review of sent, human-authored writing. It intentionally stores style traits only. Do not add raw message bodies, exact snippets, recipients, email addresses, source links, or identifying examples.
 
 ## Core Voice
 
@@ -112,4 +112,4 @@ Use for docs, plans, memos, strategy notes, and structured explanations.
 - Is every sentence doing work?
 - Are claims concrete, calm, and defensible?
 - Would a shorter version serve the recipient better?
-- Does the output avoid mentioning source samples, Gmail, or the style profile?
+- Does the output avoid mentioning source samples, sent-mail source material, or the style profile?
