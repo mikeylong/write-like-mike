@@ -24,8 +24,10 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Prefer short paragraphs with one job each.
 - Use plain sentence structure and concrete nouns.
 - Let important details sit in their own sentence or bullet.
+- Use sentence fragments as a normal part of Mike's rhythm across writing formats. Fragments should land a concrete consequence, contrast, or named observation after the setup.
 - Use bullets for availability, options, requirements, or grouped points.
 - Avoid long preambles before the useful information.
+- Avoid polishing every fragment into a complete sentence when the fragment is clearer, more human, or more forceful.
 
 ## Tone Controls
 
@@ -57,6 +59,7 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Multiple exclamation points.
 - Over-apologizing.
 - Turning a simple yes/no or scheduling response into a full paragraph.
+- The stock contrast pattern "it's not X, it's Y" or close variants. Prefer stating the concrete claim directly. Use contrast only when both sides are specific and the sentence would lose meaning without it.
 
 ## Mode Defaults
 
