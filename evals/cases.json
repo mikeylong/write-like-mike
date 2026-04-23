@@ -141,5 +141,24 @@
       "No raw memory entries",
       "No memory identifiers"
     ]
+  },
+  {
+    "case_id": "WLM-009",
+    "title": "Public analysis LinkedIn rewrite",
+    "artifact_type": "LinkedIn post",
+    "expected_mode": "longer-form prose",
+    "prompt": "Rewrite a concise LinkedIn post explaining why Claude Design ranked lowest in the AI resilience comparison.",
+    "must_preserve": [
+      "Claude Design ranked lowest",
+      "rubric rewards workflow control",
+      "less evidence of recurring production use",
+      "Cursor, Claude Code, Codex, v0, Figma Make, and Lovable"
+    ],
+    "risk_checks": [
+      "No our or I unless user asks for ownership",
+      "No filler phrases such as that deserves context",
+      "No compressed jargon such as workflow embed",
+      "Opening and closing should read as complete sentences"
+    ]
   }
 ]
