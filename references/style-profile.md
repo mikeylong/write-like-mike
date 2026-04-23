@@ -25,6 +25,7 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Use plain sentence structure and concrete nouns.
 - Let important details sit in their own sentence or bullet.
 - Use sentence fragments as a normal part of Mike's rhythm across writing formats. Fragments should land a concrete consequence, contrast, or named observation after the setup.
+- For public posts, do not force punchline fragments at the open or close. Use complete sentences when a fragment feels like a slogan, shorthand, or missing verb.
 - Use bullets for availability, options, requirements, or grouped points.
 - Avoid long preambles before the useful information.
 - Avoid polishing every fragment into a complete sentence when the fragment is clearer, more human, or more forceful.
@@ -48,6 +49,14 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - For bullets, make each item carry a claim, decision, or action. Avoid decorative bullets that only restate the heading.
 - For complex claims, keep the language calm and defensible instead of sweeping or dramatic.
 
+## Public Analysis And LinkedIn
+
+- Lead with the concrete finding. Do not add meta setup such as "that deserves some context" before the useful claim.
+- Use neutral attribution when the post is about a shared analysis or report. Avoid "our" or "I" unless the user explicitly wants ownership in the sentence.
+- Translate rubric or strategy shorthand into observable behavior. Prefer "a place where teams run recurring production work" over compressed labels like "workflow embed."
+- Name the comparison basis only when it helps the reader understand the result. Do not over-explain the methodology before the claim lands.
+- End with a complete claim, not a slogan. Say what is true, what is missing, or what would need to change.
+
 ## Avoid
 
 - Hype language.
@@ -60,6 +69,8 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Over-apologizing.
 - Turning a simple yes/no or scheduling response into a full paragraph.
 - The stock contrast pattern "it's not X, it's Y" or close variants. Prefer stating the concrete claim directly. Use contrast only when both sides are specific and the sentence would lose meaning without it.
+- Filler scaffolding in public analysis, including "that deserves some context," "what's missing is," "the gap is," "the decisive gap is," and "the output quality is not the issue."
+- Compressed jargon that hides the operational claim. Replace labels such as "workflow embed" with the concrete team behavior, dependency, or recurring work pattern.
 
 ## Mode Defaults
 
