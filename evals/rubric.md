@@ -6,9 +6,9 @@ Score each category from 0 to 2 for every eval case. Each case has a maximum sco
 
 ### Voice Fit
 
-- `2`: Direct, calm, practical, warm when useful, and not corporate.
-- `1`: Mostly aligned, but a little generic, over-polished, or under-specific.
-- `0`: Does not sound like Mike; hype, ornate language, or corporate filler dominates.
+- `2`: Direct, calm, practical, warm when useful, not corporate, and free of over-patterned rhetorical templates.
+- `1`: Mostly aligned, but a little generic, over-polished, under-specific, or carrying a few repeated rhetorical beats.
+- `0`: Does not sound like Mike; hype, ornate language, corporate filler, or synthetic template rhythms dominate.
 
 ### Factual Discipline
 

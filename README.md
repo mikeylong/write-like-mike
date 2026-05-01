@@ -17,15 +17,34 @@ Runtime memory retrieval can adjust tone and emphasis, but it must not introduce
 - `references/style-profile.md`: synthesized writing style profile
 - `references/memory-refresh.md`: safe Agent Memory retrieval and refresh guidance
 - `scripts/check_privacy.py`: package privacy leakage checker
+- `scripts/install.sh`: source-first installer for Codex and Claude local runtimes
+
+## Install
+
+Keep `/Users/mike/write-like-mike` as the canonical source. Install or refresh both local agents with:
+
+```bash
+./scripts/install.sh --all --force
+```
+
+The Codex install is a clean copied runtime package at `$CODEX_HOME/skills/write-like-mike`
+or `~/.codex/skills/write-like-mike`.
+
+The Claude install is a symlink from `$CLAUDE_HOME/skills/write-like-mike` or
+`~/.claude/skills/write-like-mike` to this repo, so Claude reads the latest source version directly.
 
 ## Validation
 
 Run these checks before publishing changes:
 
 ```bash
+python3 /Users/mike/SkillSkill/scripts/validate_skill.py --expect-codex /Users/mike/write-like-mike
+/Users/mike/write-like-mike/scripts/check_privacy.py /Users/mike/write-like-mike
+python3 -m py_compile /Users/mike/write-like-mike/scripts/check_privacy.py /Users/mike/write-like-mike/scripts/run_eval.py
+./scripts/install.sh --all --force
 python3 /Users/mike/SkillSkill/scripts/validate_skill.py --expect-codex /Users/mike/.codex/skills/write-like-mike
 /Users/mike/.codex/skills/write-like-mike/scripts/check_privacy.py /Users/mike/.codex/skills/write-like-mike
-python3 -m py_compile /Users/mike/.codex/skills/write-like-mike/scripts/check_privacy.py
+test "$(readlink "$HOME/.claude/skills/write-like-mike")" = "/Users/mike/write-like-mike"
 ```
 
 ## Eval Workflow

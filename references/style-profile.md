@@ -57,6 +57,22 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Name the comparison basis only when it helps the reader understand the result. Do not over-explain the methodology before the claim lands.
 - End with a complete claim, not a slogan. Say what is true, what is missing, or what would need to change.
 
+## AI-Sounding Public Analysis Risk Pass
+
+Use this pass for public analysis, scripts, documentary-style narration, and longer explainers. The risk is usually pattern repetition across the whole piece, not a single sentence.
+
+- Scan the full draft for repeated rhetorical machinery before finalizing.
+- Avoid cold opens built from three fragments plus a reveal. Start with the concrete finding unless the fragment pattern is necessary and human.
+- Keep fragments when they land a concrete consequence, contrast, or observation. Convert openers and closers to complete sentences when a fragment reads like a tagline.
+- Limit stock contrast patterns such as "not X, but Y," "not X. It was Y," and close variants. Keep only the few that carry specific meaning.
+- Keep isolated one-sentence paragraphs rare. Fold most aphorism-like lines back into nearby context so the piece does not become a beat machine.
+- Use cascading staircase sequences only once, and only when the chain is the point. Remove earlier duplicate mini-staircases.
+- Watch "That is X" and "This is X" sentence templates. Use them sparingly, and replace repeats with the underlying claim or evidence.
+- Replace meta-narration with evidence-led claims. Avoid announcing that something is the story, the point, or the most important shape unless the sentence names the evidence.
+- Prefer concrete verbs over polished nouns when a plain description of who did what would land better in the ear.
+- Name a mechanism label once where it is strongest, then repeat it only when new evidence changes or sharpens the claim.
+- End with one clean move: a finding, a consequence, or a next question. Do not stack a tagline, transition, and rhetorical question.
+
 ## Avoid
 
 - Hype language.
@@ -126,4 +142,7 @@ Use for docs, plans, memos, strategy notes, and structured explanations.
 - Is every sentence doing work?
 - Are claims concrete, calm, and defensible?
 - Would a shorter version serve the recipient better?
+- Did a whole-draft rhythm scan remove repeated rhetorical templates such as stock contrasts, "That is X," isolated aphorisms, and duplicate staircases?
+- For public analysis, scripts, or documentary-style prose, does the opening lead with a concrete finding and the ending make one clean move?
+- Are coined labels repeated only when new evidence earns the repeat?
 - Does the output avoid mentioning source samples, Gmail, or the style profile?

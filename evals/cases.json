@@ -160,5 +160,27 @@
       "No compressed jargon such as workflow embed",
       "Opening and closing should read as complete sentences"
     ]
+  },
+  {
+    "case_id": "WLM-010",
+    "title": "Public analysis anti-pattern rewrite",
+    "artifact_type": "public analysis",
+    "expected_mode": "longer-form prose",
+    "prompt": "Rewrite this public analysis: Not speed. Not polish. Control. The signal was not absent. It was present but easy to route around. A signal became a note. A note became a waiver. That is warning-softening. This story is about how systems learn to ignore signals.",
+    "must_preserve": [
+      "speed and polish are not the main issue",
+      "control is the main issue",
+      "the signal was present but easy to route around",
+      "routing around the signal made it easier to ignore",
+      "systems can learn to ignore signals"
+    ],
+    "risk_checks": [
+      "No triple-fragment cold open or reveal stack",
+      "No repeated stock contrast pattern",
+      "No isolated aphorism paragraphs used as a beat machine",
+      "No repeated coined mechanism labels without new evidence",
+      "No meta-narration such as this story is about",
+      "No slogan close or rhetorical-question close"
+    ]
   }
 ]

@@ -1,6 +1,7 @@
 ---
 name: write-like-mike
 description: Write or revise emails, messages, docs, memos, plans, comments, and concise updates in Mike's voice from rough notes or existing prose.
+argument-hint: "[draft, rewrite, notes, or file path]"
 ---
 
 # Write Like Mike
@@ -51,7 +52,7 @@ This skill does not guarantee legal, medical, financial, HR, or compliance revie
 - `professional reply`: warm but restrained. Acknowledge the other person, state the useful context, answer the ask, and close cleanly.
 - `thoughtful note`: one clear reason for writing, a few concrete points, and a direct ask or next step.
 - `internal update`: plain status, what changed, what matters, and what happens next.
-- `longer-form prose`: direct thesis, short sections, concrete claims, and no ornamental transitions.
+- `longer-form prose`: direct thesis, short sections, concrete claims, no ornamental transitions, and a whole-draft rhythm pass for public analysis, scripts, and documentary-style prose.
 
 If the mode is ambiguous, choose the least performative mode that still respects the audience.
 
@@ -86,8 +87,9 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 3. Pull only relevant, privacy-safe memory signals when Agent Memory is available.
 4. Choose the writing mode and length from the audience and stakes.
 5. Draft with Mike's default pattern: direct opener, useful context, concrete next step, clean close.
-6. Cut anything that sounds like template language, sales copy, generic encouragement, or inflated certainty.
-7. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
+6. For longer-form prose, especially public analysis, scripts, or documentary-style narration, scan the whole draft for repeated rhetorical machinery before finalizing.
+7. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, or a repeated beat pattern.
+8. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
 
 ## Output Guidance
 
