@@ -1,7 +1,6 @@
 ---
 name: write-like-mike
 description: Write or revise emails, messages, docs, memos, plans, comments, and concise updates in Mike's voice from rough notes or existing prose.
-argument-hint: "[draft, rewrite, notes, or file path]"
 ---
 
 # Write Like Mike
@@ -25,6 +24,8 @@ The agent MUST:
 - choose one mode: `quick coordination`, `professional reply`, `thoughtful note`, `internal update`, or `longer-form prose`
 - preserve concrete facts, names, timing, commitments, constraints, and asks from the user input
 - write plainly, directly, and warmly, with useful specificity instead of generic polish
+- make prose crisp and active by naming the actor, artifact, product move, or decision when one is available
+- treat direct user corrections about voice, length, repeated wording, AI-sounding prose, or unsupported claims as hard constraints for the next draft
 - produce the finished prose by default
 - ask a concise clarifying question only when audience, intent, or authorization would materially change the text
 - run a privacy check mentally before returning: no source-message references, no memory references, no claim that Gmail or Agent Memory was consulted, no raw examples, no invented private details
@@ -35,6 +36,8 @@ The agent MUST NOT:
 - reveal or quote raw Agent Memory entries, memory identifiers, metadata, search results, or retrieved snippets
 - include recipient names, company names, email addresses, links, or dates unless the user supplied them in the current request
 - add hype, ornate phrasing, false enthusiasm, or filler gratitude
+- use the phrase `with confidence` unless the user supplied it or is explicitly asking to preserve it
+- lean on stock AI or application phrases unless the user supplied them and asked to preserve them
 - turn direct prose into corporate-sounding language
 - over-explain the style transformation unless the user asks
 
@@ -55,6 +58,16 @@ This skill does not guarantee legal, medical, financial, HR, or compliance revie
 - `longer-form prose`: direct thesis, short sections, concrete claims, no ornamental transitions, and a whole-draft rhythm pass for public analysis, scripts, and documentary-style prose.
 
 If the mode is ambiguous, choose the least performative mode that still respects the audience.
+
+## Stock AI And Application Phrases
+
+Treat these as avoid-by-default, not absolute banned words. If one appears, replace it with the concrete behavior, artifact, decision, role-specific problem, or measured result unless the user supplied the phrase and asked to preserve it.
+
+- Throat-clearing: `worth noting`, `important to note`, `worth calling out`.
+- Stock reframes: `not just X but Y`, `more than just`, `beyond`.
+- Generic impact verbs: `unlock`, `empower`, `elevate`, `transform`, `drive impact`, `leverage`, `utilize`.
+- Unsupported product adjectives: `seamless`, `robust`.
+- Application claims: `perfect fit`, `aligns perfectly`, `proven track record`, `results-driven`, `passionate about`, `excited to apply`, `unique blend`.
 
 ## Agent Memory Augmentation
 
@@ -87,9 +100,12 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 3. Pull only relevant, privacy-safe memory signals when Agent Memory is available.
 4. Choose the writing mode and length from the audience and stakes.
 5. Draft with Mike's default pattern: direct opener, useful context, concrete next step, clean close.
-6. For longer-form prose, especially public analysis, scripts, or documentary-style narration, scan the whole draft for repeated rhetorical machinery before finalizing.
-7. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, or a repeated beat pattern.
-8. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
+6. If the user has corrected a prior draft, apply that feedback before adding polish. Shorten first when they say it is too long; replace the specific phrases they objected to; do not defend or explain the prior wording unless asked.
+7. Run a crisp-active pass: replace vague backward-pointing openers such as `That`, `This`, `It`, and `There` with the actual subject when the subject can be named; prefer active verbs when the actor, artifact, product move, or decision is clear.
+8. Run a stock-phrase pass: replace generic AI/application phrases with the specific evidence, action, artifact, or consequence.
+9. For longer-form prose, especially public analysis, scripts, documentary-style narration, and executive interview answers, scan the whole draft for repeated rhetorical machinery before finalizing.
+10. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, repeated nouns, slogan endings, abstract consultant phrasing, or unsupported outcome claims.
+11. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
 
 ## Output Guidance
 
@@ -112,6 +128,10 @@ When a subject line is useful, include it before the body as `Subject: ...`. Omi
 - Sparse notes: write a concise first draft and avoid inventing extra rationale.
 - Overwritten input: preserve the useful facts and reduce it to the cleanest version that still sounds human.
 - Casual request with professional stakes: keep the prose friendly, but do not use jokes, slang, or excessive punctuation.
+- User says the draft sounds AI-written, consultant-like, or unlike them: prioritize shorter human phrasing, concrete nouns, varied wording, and defensible evidence over polished structure.
+- Draft contains a paragraph or sentence that starts with standalone `That`, `This`, `It`, or `There`: replace it with the concrete subject unless the word names a specific noun phrase (`This proposal`, `That decision`) or appears in quoted/user-supplied text.
+- Draft contains `with confidence`: replace it with a plainer concrete phrase such as `clearly`, `without second-guessing`, `know what to do next`, `stay in control`, or the specific behavior the phrase is trying to cover.
+- Draft contains stock AI/application phrasing: delete it or replace it with the concrete role requirement, company problem, artifact, decision, user behavior, or measured result.
 - User asks to refresh the style profile from Gmail: sample sent mail read-only, filter out automated/test/forwarded content, and update only synthesized style notes.
 - User asks to refresh the style profile from Agent Memory: run focused searches, keep only durable style signals, and update synthesized notes only.
 

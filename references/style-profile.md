@@ -25,10 +25,13 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Use plain sentence structure and concrete nouns.
 - Let important details sit in their own sentence or bullet.
 - Use sentence fragments as a normal part of Mike's rhythm across writing formats. Fragments should land a concrete consequence, contrast, or named observation after the setup.
+- Start paragraphs and important sentences with the concrete subject when possible. Prefer `GC AI's move...` or `The design change...` over standalone bridge openers like `That feels...`, `This means...`, `It is...`, or `There is...`.
 - For public posts, do not force punchline fragments at the open or close. Use complete sentences when a fragment feels like a slogan, shorthand, or missing verb.
 - Use bullets for availability, options, requirements, or grouped points.
 - Avoid long preambles before the useful information.
 - Avoid polishing every fragment into a complete sentence when the fragment is clearer, more human, or more forceful.
+- Prefer active verbs when the actor, artifact, product move, or decision can be named without adding unsupported facts.
+- Replace overused assurance phrases such as `with confidence` with the concrete behavior: what the person can see, decide, do next, or control.
 
 ## Tone Controls
 
@@ -49,6 +52,16 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - For bullets, make each item carry a claim, decision, or action. Avoid decorative bullets that only restate the heading.
 - For complex claims, keep the language calm and defensible instead of sweeping or dramatic.
 
+## Applications And Self-Pitch
+
+Use this pass for job applications, recruiter notes, interview answers, bios, and professional introductions.
+
+- Replace generic fit claims with a specific match between the role, company problem, and the user's work.
+- Avoid `perfect fit`, `aligns perfectly`, `proven track record`, `results-driven`, `passionate about`, `excited to apply`, and `unique blend` unless the user supplied the phrase and asked to preserve it.
+- Avoid leading with enthusiasm when evidence would be stronger. Prefer `The role asks for [X]; my closest match is [Y]` over `I am excited to apply`.
+- Replace soft-skill labels with evidence: what was designed, led, changed, shipped, clarified, measured, or decided.
+- If the line could fit almost any applicant, rewrite it around the specific role requirement, company problem, artifact, decision, action, or result.
+
 ## Public Analysis And LinkedIn
 
 - Lead with the concrete finding. Do not add meta setup such as "that deserves some context" before the useful claim.
@@ -57,6 +70,20 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Name the comparison basis only when it helps the reader understand the result. Do not over-explain the methodology before the claim lands.
 - End with a complete claim, not a slogan. Say what is true, what is missing, or what would need to change.
 
+## Human Metrics And Interview Answers
+
+Use this pass for executive interview answers, portfolio narration, case-study Q&A, and short metric-backed stories. The target is human, concise, and specific. Not consulting-template prose.
+
+- Default to 2-3 compact paragraphs: context, evidence, changed decision, measured result. Cut setup before adding more framing.
+- Prefer plain words such as `feature`, `setup`, `logic step`, `file`, `run`, `error`, and `help` when those words are accurate.
+- Avoid polished phrases that make the story sound synthetic or inflated, including `product capability`, `reshape it for their business`, `did not trust themselves to use it`, `the outcome was decisive`, `we walked away`, and slogan rules such as `treat it as broken`.
+- Do not say an outcome `dropped sharply`, `improved significantly`, or `reduced dependency` unless the user supplied a metric or you mark a bracketed placeholder for the missing number.
+- For metrics, use natural before/after phrasing: `completion improved from [x] to [y]`, `time dropped from [x] to [y]`, `support shifted from [basic setup] to [edge cases]`.
+- If the user has not supplied numbers, use bracketed placeholders rather than inventing values. Make the sentence easy to replace live.
+- Vary repeated nouns. If a draft repeats words like customer, workflow, self-serve, support, or stronger, replace some of them with the actual task, object, or measure.
+- Keep the result tied to observable behavior: task completion, time to success, error recovery, support volume, sales/service involvement, or a decision rule the team reused.
+- When the user says a draft sounds AI-written, over-polished, or unlike them, shorten it and use more ordinary nouns before trying to make it more impressive.
+
 ## AI-Sounding Public Analysis Risk Pass
 
 Use this pass for public analysis, scripts, documentary-style narration, and longer explainers. The risk is usually pattern repetition across the whole piece, not a single sentence.
@@ -64,11 +91,12 @@ Use this pass for public analysis, scripts, documentary-style narration, and lon
 - Scan the full draft for repeated rhetorical machinery before finalizing.
 - Avoid cold opens built from three fragments plus a reveal. Start with the concrete finding unless the fragment pattern is necessary and human.
 - Keep fragments when they land a concrete consequence, contrast, or observation. Convert openers and closers to complete sentences when a fragment reads like a tagline.
-- Limit stock contrast patterns such as "not X, but Y," "not X. It was Y," and close variants. Keep only the few that carry specific meaning.
+- Limit stock contrast patterns such as `not X, but Y`, `not just X but Y`, `more than just X`, `beyond X`, `not X. It was Y`, and close variants. Keep only the few that carry specific meaning.
 - Keep isolated one-sentence paragraphs rare. Fold most aphorism-like lines back into nearby context so the piece does not become a beat machine.
 - Use cascading staircase sequences only once, and only when the chain is the point. Remove earlier duplicate mini-staircases.
 - Watch "That is X" and "This is X" sentence templates. Use them sparingly, and replace repeats with the underlying claim or evidence.
-- Replace meta-narration with evidence-led claims. Avoid announcing that something is the story, the point, or the most important shape unless the sentence names the evidence.
+- Replace meta-narration with evidence-led claims. Avoid announcing that something is `the real story`, `the point`, `at its core`, `ultimately`, or `what this really means` unless the sentence names the evidence.
+- Treat vague demonstrative openers as a signal to rewrite. Replace paragraph-starting `That`, `This`, `It`, or `There` with the specific subject unless the opener names a concrete noun phrase or appears in quoted/user-supplied text.
 - Prefer concrete verbs over polished nouns when a plain description of who did what would land better in the ear.
 - Name a mechanism label once where it is strongest, then repeat it only when new evidence changes or sharpens the claim.
 - End with one clean move: a finding, a consequence, or a next question. Do not stack a tagline, transition, and rhetorical question.
@@ -84,7 +112,12 @@ Use this pass for public analysis, scripts, documentary-style narration, and lon
 - Multiple exclamation points.
 - Over-apologizing.
 - Turning a simple yes/no or scheduling response into a full paragraph.
-- The stock contrast pattern "it's not X, it's Y" or close variants. Prefer stating the concrete claim directly. Use contrast only when both sides are specific and the sentence would lose meaning without it.
+- The stock contrast pattern `it's not X, it's Y`, `not just X but Y`, `more than just X`, `beyond X`, or close variants. Prefer stating the concrete claim directly. Use contrast only when both sides are specific and the sentence would lose meaning without it.
+- Standalone demonstrative bridge openers such as `That feels relevant`, `This matters`, `It is important`, or `There is a need` when a concrete subject would make the sentence crisper and more active.
+- The phrase `with confidence`, unless quoting or preserving user-supplied text. Prefer `clearly`, `without second-guessing`, `know what to do next`, `stay in control`, or the specific behavior behind the claim.
+- Generic impact verbs such as `unlock`, `empower`, `elevate`, `transform`, `drive impact`, `leverage`, and `utilize` when `use`, `change`, `help`, or the actual action would be clearer.
+- Unsupported product adjectives such as `seamless` and `robust` when the sentence does not name what became easier, faster, stronger, or more reliable.
+- Generic application claims such as `perfect fit`, `aligns perfectly`, `proven track record`, `results-driven`, `passionate about`, `excited to apply`, and `unique blend`.
 - Filler scaffolding in public analysis, including "that deserves some context," "what's missing is," "the gap is," "the decisive gap is," and "the output quality is not the issue."
 - Compressed jargon that hides the operational claim. Replace labels such as "workflow embed" with the concrete team behavior, dependency, or recurring work pattern.
 
@@ -141,6 +174,9 @@ Use for docs, plans, memos, strategy notes, and structured explanations.
 - Is the warmth useful rather than performative?
 - Is every sentence doing work?
 - Are claims concrete, calm, and defensible?
+- Do paragraphs and important sentences name the concrete subject instead of leaning on standalone `That`, `This`, `It`, or `There`?
+- Did the draft avoid the stock phrase `with confidence` unless the user supplied it?
+- Did the draft replace generic AI/application phrases with concrete behavior, evidence, or results?
 - Would a shorter version serve the recipient better?
 - Did a whole-draft rhythm scan remove repeated rhetorical templates such as stock contrasts, "That is X," isolated aphorisms, and duplicate staircases?
 - For public analysis, scripts, or documentary-style prose, does the opening lead with a concrete finding and the ending make one clean move?

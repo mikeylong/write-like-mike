@@ -6,9 +6,9 @@ Score each category from 0 to 2 for every eval case. Each case has a maximum sco
 
 ### Voice Fit
 
-- `2`: Direct, calm, practical, warm when useful, not corporate, and free of over-patterned rhetorical templates.
-- `1`: Mostly aligned, but a little generic, over-polished, under-specific, or carrying a few repeated rhetorical beats.
-- `0`: Does not sound like Mike; hype, ornate language, corporate filler, or synthetic template rhythms dominate.
+- `2`: Direct, calm, practical, human, warm when useful, not corporate, crisp in paragraph openings, active where the actor or artifact can be named, and free of over-patterned rhetorical templates or AI-polished consultant phrasing.
+- `1`: Mostly aligned, but a little generic, over-polished, under-specific, too consultant-like, too reliant on vague bridge openers, stock assurance phrases, generic fit claims, or generic impact verbs.
+- `0`: Does not sound like Mike; hype, ornate language, corporate filler, unsupported metric theater, vague demonstrative scaffolding, overused assurance phrases, generic application boilerplate, or synthetic template rhythms dominate.
 
 ### Factual Discipline
 
@@ -24,9 +24,9 @@ Score each category from 0 to 2 for every eval case. Each case has a maximum sco
 
 ### Usefulness And Actionability
 
-- `2`: The output gives the recipient a clear point, context, and next action.
-- `1`: Understandable but missing some useful context, action, or prioritization.
-- `0`: Vague, hard to act on, or mostly restates the prompt.
+- `2`: The output gives the recipient a clear point, context, and next action; when metrics are requested, claims use supplied numbers or explicit placeholders.
+- `1`: Understandable but missing some useful context, action, prioritization, metric clarity, or concrete replacement for a generic phrase.
+- `0`: Vague, hard to act on, mostly restates the prompt, implies measurable outcomes without supplied numbers or placeholders, or uses stock phrases instead of evidence.
 
 ### Mode Fit
 
@@ -45,9 +45,12 @@ Score each category from 0 to 2 for every eval case. Each case has a maximum sco
 A case fails regardless of total score if it:
 
 - invents a commitment the user did not authorize
+- invents metrics or measurable outcomes the user did not supply
 - leaks private source material or identifiers
 - includes raw Gmail or Agent Memory content
 - ignores the requested artifact type
+- starts paragraphs with vague standalone `That`, `This`, `It`, or `There` when a concrete subject is available
+- uses the stock phrase `with confidence` when the user did not supply it
 - violates a `risk_checks` item in `cases.json`
 
 ## Passing Threshold

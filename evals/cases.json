@@ -177,10 +177,134 @@
     "risk_checks": [
       "No triple-fragment cold open or reveal stack",
       "No repeated stock contrast pattern",
+      "No not just X but Y, more than just X, or beyond X as stock reframes",
+      "No meta-framing such as at its core, ultimately, the real story is, or what this really means",
       "No isolated aphorism paragraphs used as a beat machine",
       "No repeated coined mechanism labels without new evidence",
       "No meta-narration such as this story is about",
       "No slogan close or rhetorical-question close"
+    ]
+  },
+  {
+    "case_id": "WLM-011",
+    "title": "Human metric-backed interview answer",
+    "artifact_type": "interview answer",
+    "expected_mode": "longer-form prose",
+    "prompt": "Draft a behavioral interview answer so it sounds like Mike, not AI-written consultant prose. Keep it to 2-3 compact paragraphs, use we/our language, and preserve the bracketed metrics.",
+    "must_preserve": [
+      "feature where customers moved data between systems",
+      "initial design hid the logic step in setup",
+      "[2 of 7] users found the test file",
+      "[1 of 7] knew whether the run touched live data",
+      "[0 of 7] recovered from an error without help",
+      "completion improved from [29% to 86%]",
+      "time to first successful test dropped from [18 minutes to 6]",
+      "SA support shifted from setup to edge cases"
+    ],
+    "risk_checks": [
+      "No phrase product capability",
+      "No phrase reshape it for their business",
+      "No phrase did not trust themselves to use it",
+      "No phrase the outcome was decisive",
+      "No phrase dropped sharply without a metric",
+      "No phrase we walked away",
+      "No phrase treat it as broken",
+      "No invented unbracketed metrics",
+      "No AI-polished consultant-template framing",
+      "Keep the answer to 2-3 compact paragraphs"
+    ]
+  },
+  {
+    "case_id": "WLM-012",
+    "title": "Crisp active application answer",
+    "artifact_type": "application answer",
+    "expected_mode": "professional reply",
+    "prompt": "Rewrite a succinct application answer from these facts. Do not start any paragraph with vague standalone That, This, It, or There. Avoid the tempting bridge 'That feels especially relevant...' by naming GC AI's move directly.",
+    "must_preserve": [
+      "GC AI problem space",
+      "complex AI systems",
+      "clear trusted workflows for expert users",
+      "AI, data, and enterprise product design",
+      "user clarity and confidence",
+      "what the system is doing, when to trust it, and how to stay in control",
+      "GC AI moves from copilot-style assistance into workflow orchestration for legal teams",
+      "interaction patterns, trust cues, information architecture, and design system foundations"
+    ],
+    "risk_checks": [
+      "No paragraph starts with standalone That, This, It, or There",
+      "Use a concrete subject such as GC AI's move instead of That feels",
+      "Prefer active verbs when the actor or product move can be named",
+      "No broad product promise about legal teams improving accuracy or speed without supplied evidence",
+      "Keep the answer succinct"
+    ]
+  },
+  {
+    "case_id": "WLM-013",
+    "title": "Avoid overused assurance phrase",
+    "artifact_type": "application answer",
+    "expected_mode": "professional reply",
+    "prompt": "Rewrite a concise answer from these facts: legal teams need to understand AI outputs; lawyers need to know what changed, what source supports the answer, and what to do next; design should make review and control easier. Avoid the phrase 'with confidence'.",
+    "must_preserve": [
+      "legal teams need to understand AI outputs",
+      "lawyers need to know what changed",
+      "lawyers need to know what source supports the answer",
+      "lawyers need to know what to do next",
+      "design should make review and control easier"
+    ],
+    "risk_checks": [
+      "No phrase with confidence",
+      "Name the concrete behavior behind the assurance claim",
+      "No broad product promise without supplied evidence",
+      "Keep the answer concise"
+    ]
+  },
+  {
+    "case_id": "WLM-014",
+    "title": "Application prose without generic fit claims",
+    "artifact_type": "application answer",
+    "expected_mode": "professional reply",
+    "prompt": "Rewrite from facts: role asks for AI workflow design; my work covers enterprise data and AI workflows; include interaction patterns, trust cues, IA, and design systems. Avoid generic fit claims.",
+    "must_preserve": [
+      "role asks for AI workflow design",
+      "enterprise data and AI workflows",
+      "interaction patterns",
+      "trust cues",
+      "information architecture",
+      "design system foundations"
+    ],
+    "risk_checks": [
+      "No phrase perfect fit",
+      "No phrase aligns perfectly",
+      "No phrase proven track record",
+      "No phrase results-driven",
+      "No phrase passionate about",
+      "No phrase excited to apply",
+      "No phrase unique blend",
+      "Replace generic fit claims with specific evidence of fit"
+    ]
+  },
+  {
+    "case_id": "WLM-015",
+    "title": "Product prose without generic impact gloss",
+    "artifact_type": "product/design prose",
+    "expected_mode": "longer-form prose",
+    "prompt": "Rewrite in Mike's voice: robust/seamless design designed to help teams unlock value and drive impact. Preserve: flow hides source evidence; reviewers need changed fields, source links, next actions; design should make review/control easier.",
+    "must_preserve": [
+      "current flow hides source evidence",
+      "reviewers need to see changed fields",
+      "source links",
+      "next actions",
+      "design should make review and control easier"
+    ],
+    "risk_checks": [
+      "No phrase robust",
+      "No phrase seamless",
+      "No phrase designed to help",
+      "No phrase unlock value",
+      "No phrase drive impact",
+      "No phrase leverage AI",
+      "No phrase transform review workflows",
+      "Name the concrete behavior instead of generic impact language"
     ]
   }
 ]
