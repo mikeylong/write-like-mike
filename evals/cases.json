@@ -306,5 +306,29 @@
       "No phrase transform review workflows",
       "Name the concrete behavior instead of generic impact language"
     ]
+  },
+  {
+    "case_id": "WLM-016",
+    "title": "Portfolio deck speaker notes without robo-speak",
+    "artifact_type": "presentation narration",
+    "expected_mode": "presentation narration",
+    "prompt": "Rewrite this title and notes in Mike's presentation voice. Title: Roadmap unit changed from pages to capability primitives. Notes: show action contract in UI; operating standard shifted from surface count; bring operating model, not pre-baked answer.",
+    "must_preserve": [
+      "roadmap moved away from page-by-page cleanup",
+      "governed actions moved forward",
+      "UI showed the rules or proof behind actions",
+      "measurement shifted away from adding more screens",
+      "Mike brings a way of working instead of assuming the answer"
+    ],
+    "risk_checks": [
+      "No phrase roadmap unit",
+      "No phrase capability primitives",
+      "No phrase action contract",
+      "No phrase operating standard",
+      "No phrase surface count",
+      "No phrase pre-baked answer",
+      "Keep slide copy shorter than speaker notes",
+      "Do not invent metrics or outcomes"
+    ]
   }
 ]

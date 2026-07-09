@@ -84,6 +84,19 @@ Use this pass for executive interview answers, portfolio narration, case-study Q
 - Keep the result tied to observable behavior: task completion, time to success, error recovery, support volume, sales/service involvement, or a decision rule the team reused.
 - When the user says a draft sounds AI-written, over-polished, or unlike them, shorten it and use more ordinary nouns before trying to make it more impressive.
 
+## Presentation Narration And Deck Copy
+
+Use this pass for slide titles, subtitles, talk tracks, speaker notes, case-study narration, and portfolio review decks. The target is natural spoken leadership language, not casual language and not consultant-template language.
+
+- Slide titles should sound like something Mike would actually say in the room. Prefer `The roadmap changed from pages to governed actions` over compressed labels like `roadmap unit`.
+- Preserve the slide's job. Do not make the copy friendlier by weakening the argument.
+- Keep slide-surface copy short and human. Put nuance, caveats, and source boundaries in speaker notes unless the audience needs them on the slide.
+- Replace internal model labels with the plain object or decision: `roadmap`, `rule`, `screen`, `publish`, `review`, `approval`, `recovery`, `evidence`, `decision`, `shared service`, or the actual artifact name.
+- Avoid presentation robo-speak such as `roadmap unit`, `capability primitives`, `action contract`, `system model`, `operating standard`, `operating mechanisms`, `surface count`, `pre-baked answer`, and `agentic actions` unless the user supplied the term and asked to keep it.
+- If a term is technically accurate but awkward aloud, use it once in notes only when needed, then speak in plain language.
+- Speaker notes should help Mike present, not defend the deck. Avoid self-conscious lines about using evidence directionally or keeping backup details unless the user explicitly wants that.
+- For case-study impact, use bounded language and observable behavior. Say `people found the block and chose a recovery path` before trying to make the result sound bigger.
+
 ## AI-Sounding Public Analysis Risk Pass
 
 Use this pass for public analysis, scripts, documentary-style narration, and longer explainers. The risk is usually pattern repetition across the whole piece, not a single sentence.
@@ -118,6 +131,7 @@ Use this pass for public analysis, scripts, documentary-style narration, and lon
 - Generic impact verbs such as `unlock`, `empower`, `elevate`, `transform`, `drive impact`, `leverage`, and `utilize` when `use`, `change`, `help`, or the actual action would be clearer.
 - Unsupported product adjectives such as `seamless` and `robust` when the sentence does not name what became easier, faster, stronger, or more reliable.
 - Generic application claims such as `perfect fit`, `aligns perfectly`, `proven track record`, `results-driven`, `passionate about`, `excited to apply`, and `unique blend`.
+- Presentation robo-speak such as `roadmap unit`, `capability primitives`, `action contract`, `system model`, `operating standard`, `operating mechanisms`, `surface count`, `pre-baked answer`, and `agentic actions` when a plain spoken phrase would carry the same claim.
 - Filler scaffolding in public analysis, including "that deserves some context," "what's missing is," "the gap is," "the decisive gap is," and "the output quality is not the issue."
 - Compressed jargon that hides the operational claim. Replace labels such as "workflow embed" with the concrete team behavior, dependency, or recurring work pattern.
 

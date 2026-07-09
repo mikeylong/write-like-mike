@@ -51,6 +51,7 @@ A case fails regardless of total score if it:
 - ignores the requested artifact type
 - starts paragraphs with vague standalone `That`, `This`, `It`, or `There` when a concrete subject is available
 - uses the stock phrase `with confidence` when the user did not supply it
+- leaves presentation robo-speak in deck copy or speaker notes when the prompt asks for Mike's voice
 - violates a `risk_checks` item in `cases.json`
 
 ## Passing Threshold

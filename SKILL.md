@@ -1,11 +1,14 @@
 ---
 name: write-like-mike
-description: Write or revise emails, messages, docs, memos, plans, comments, and concise updates in Mike's voice from rough notes or existing prose.
+description: Write or revise emails, messages, docs, memos, plans, comments, deck copy, speaker notes, talk tracks, and concise updates in Mike's voice from rough notes or existing prose.
 ---
 
 # Write Like Mike
 
 Use this skill when the user asks to write like Mike, rewrite something in Mike's voice, draft prose as Mike, or make text sound more like the user's natural writing.
+
+For presentation work, use this skill for the personal voice pass: slide copy, speaker notes, talk tracks, portfolio narration, and interview answers should sound like Mike.
+Preserve the deck's claims, evidence boundaries, and slide jobs. Generic deck polish and QA belong in `$deck-polish`; this skill makes the words sound like Mike after that structure is clear.
 
 This is a personal workflow skill. It uses the synthesized style profile in [references/style-profile.md](references/style-profile.md).
 The profile was derived from read-only sent-mail review and intentionally contains no raw source messages, recipients, exact snippets, or identifying examples.
@@ -21,8 +24,9 @@ The agent MUST:
 - read [references/style-profile.md](references/style-profile.md) before drafting or revising
 - use Agent Memory as described in [references/memory-refresh.md](references/memory-refresh.md) when memory tools are available and the request would benefit from user preferences, tone corrections, channel norms, or durable context
 - infer the artifact type, audience, stakes, channel, and desired length from the request
-- choose one mode: `quick coordination`, `professional reply`, `thoughtful note`, `internal update`, or `longer-form prose`
+- choose one mode: `quick coordination`, `professional reply`, `thoughtful note`, `internal update`, `presentation narration`, or `longer-form prose`
 - preserve concrete facts, names, timing, commitments, constraints, and asks from the user input
+- for deck copy, speaker notes, or talk tracks, preserve the slide's job, evidence boundary, and intended audience moment
 - write plainly, directly, and warmly, with useful specificity instead of generic polish
 - make prose crisp and active by naming the actor, artifact, product move, or decision when one is available
 - treat direct user corrections about voice, length, repeated wording, AI-sounding prose, or unsupported claims as hard constraints for the next draft
@@ -55,6 +59,7 @@ This skill does not guarantee legal, medical, financial, HR, or compliance revie
 - `professional reply`: warm but restrained. Acknowledge the other person, state the useful context, answer the ask, and close cleanly.
 - `thoughtful note`: one clear reason for writing, a few concrete points, and a direct ask or next step.
 - `internal update`: plain status, what changed, what matters, and what happens next.
+- `presentation narration`: slide titles, subtitles, speaker notes, portfolio narration, and talk tracks. Keep the claim clear, make it sound natural out loud, move detail into notes when useful, and preserve bounded evidence.
 - `longer-form prose`: direct thesis, short sections, concrete claims, no ornamental transitions, and a whole-draft rhythm pass for public analysis, scripts, and documentary-style prose.
 
 If the mode is ambiguous, choose the least performative mode that still respects the audience.
@@ -68,6 +73,7 @@ Treat these as avoid-by-default, not absolute banned words. If one appears, repl
 - Generic impact verbs: `unlock`, `empower`, `elevate`, `transform`, `drive impact`, `leverage`, `utilize`.
 - Unsupported product adjectives: `seamless`, `robust`.
 - Application claims: `perfect fit`, `aligns perfectly`, `proven track record`, `results-driven`, `passionate about`, `excited to apply`, `unique blend`.
+- Presentation robo-speak: `roadmap unit`, `capability primitives`, `action contract`, `system model`, `operating standard`, `operating mechanisms`, `pre-baked answer`, `agentic actions`.
 
 ## Agent Memory Augmentation
 
@@ -103,9 +109,10 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 6. If the user has corrected a prior draft, apply that feedback before adding polish. Shorten first when they say it is too long; replace the specific phrases they objected to; do not defend or explain the prior wording unless asked.
 7. Run a crisp-active pass: replace vague backward-pointing openers such as `That`, `This`, `It`, and `There` with the actual subject when the subject can be named; prefer active verbs when the actor, artifact, product move, or decision is clear.
 8. Run a stock-phrase pass: replace generic AI/application phrases with the specific evidence, action, artifact, or consequence.
-9. For longer-form prose, especially public analysis, scripts, documentary-style narration, and executive interview answers, scan the whole draft for repeated rhetorical machinery before finalizing.
-10. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, repeated nouns, slogan endings, abstract consultant phrasing, or unsupported outcome claims.
-11. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
+9. For presentation narration, run a speaker-ear pass: replace phrases Mike would not naturally say aloud while keeping the director-level claim intact.
+10. For longer-form prose, especially public analysis, scripts, documentary-style narration, and executive interview answers, scan the whole draft for repeated rhetorical machinery before finalizing.
+11. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, repeated nouns, slogan endings, abstract consultant phrasing, or unsupported outcome claims.
+12. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
 
 ## Output Guidance
 
@@ -118,6 +125,8 @@ For a rewrite request, return the revised text only. For a rewrite-review reques
 
 Keep change notes brief and focused on voice, clarity, and intent.
 
+For presentation narration, keep slide-surface copy shorter than speaker notes. Do not force all context onto the slide surface. If returning both, label them `Slide Copy` and `Speaker Notes`.
+
 When a subject line is useful, include it before the body as `Subject: ...`. Omit it for notes, comments, plans, and docs unless requested.
 
 ## Edge Cases
@@ -129,9 +138,12 @@ When a subject line is useful, include it before the body as `Subject: ...`. Omi
 - Overwritten input: preserve the useful facts and reduce it to the cleanest version that still sounds human.
 - Casual request with professional stakes: keep the prose friendly, but do not use jokes, slang, or excessive punctuation.
 - User says the draft sounds AI-written, consultant-like, or unlike them: prioritize shorter human phrasing, concrete nouns, varied wording, and defensible evidence over polished structure.
+- User provides `$deck-polish` speaker-ear findings: treat those findings as hard constraints, then make the replacement sound like Mike rather than merely generic.
 - Draft contains a paragraph or sentence that starts with standalone `That`, `This`, `It`, or `There`: replace it with the concrete subject unless the word names a specific noun phrase (`This proposal`, `That decision`) or appears in quoted/user-supplied text.
 - Draft contains `with confidence`: replace it with a plainer concrete phrase such as `clearly`, `without second-guessing`, `know what to do next`, `stay in control`, or the specific behavior the phrase is trying to cover.
 - Draft contains stock AI/application phrasing: delete it or replace it with the concrete role requirement, company problem, artifact, decision, user behavior, or measured result.
+- Draft contains presentation robo-speak such as `roadmap unit`, `capability primitives`, `action contract`, `system model`, or `operating standard`: replace it with the plain thing Mike would say aloud.
+  Useful replacements include `roadmap`, `governed actions`, `publish rules`, `the rules became visible`, or `what ready meant`.
 - User asks to refresh the style profile from Gmail: sample sent mail read-only, filter out automated/test/forwarded content, and update only synthesized style notes.
 - User asks to refresh the style profile from Agent Memory: run focused searches, keep only durable style signals, and update synthesized notes only.
 
