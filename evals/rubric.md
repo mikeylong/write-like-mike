@@ -6,9 +6,10 @@ Score each category from 0 to 2 for every eval case. Each case has a maximum sco
 
 ### Voice Fit
 
-- `2`: Direct, calm, practical, human, warm when useful, not corporate, crisp in paragraph openings, active where the actor or artifact can be named, and free of over-patterned rhetorical templates or AI-polished consultant phrasing.
-- `1`: Mostly aligned, but a little generic, over-polished, under-specific, too consultant-like, too reliant on vague bridge openers, stock assurance phrases, generic fit claims, or generic impact verbs.
-- `0`: Does not sound like Mike; hype, ornate language, corporate filler, unsupported metric theater, vague demonstrative scaffolding, overused assurance phrases, generic application boilerplate, or synthetic template rhythms dominate.
+- `2`: Direct, calm, practical, human, warm when useful, not corporate, crisp in paragraph openings, active where the actor or artifact can be named, and free of over-patterned rhetorical templates, clipped memo prose, or AI-polished consultant phrasing.
+  Preserves natural connective phrasing when it carries rhythm, warmth, or uncertainty.
+- `1`: Mostly aligned, but a little generic, over-polished, under-specific, too consultant-like, too compressed, too padded, or too reliant on vague bridge openers, stock assurance phrases, generic fit claims, or generic impact verbs.
+- `0`: Does not sound like Mike; hype, ornate language, corporate filler, unsupported metric theater, vague demonstrative scaffolding, overused assurance phrases, generic application boilerplate, synthetic template rhythms, or telegraphic compression dominate.
 
 ### Factual Discipline
 
@@ -30,8 +31,8 @@ Score each category from 0 to 2 for every eval case. Each case has a maximum sco
 
 ### Mode Fit
 
-- `2`: Correctly matches the requested channel and length.
-- `1`: Usable but slightly too long, too short, too formal, or too casual.
+- `2`: Correctly matches the requested channel and length, with enough conversational rhythm to sound human and no repeated explanation that slows the reader down.
+- `1`: Usable but slightly too long, too short, too formal, too casual, too clipped, or too slow to read.
 - `0`: Wrong mode for the task.
 
 ### Memory And Gmail Discipline

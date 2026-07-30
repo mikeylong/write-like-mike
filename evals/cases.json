@@ -330,5 +330,26 @@
       "Keep slide copy shorter than speaker notes",
       "Do not invent metrics or outcomes"
     ]
+  },
+  {
+    "case_id": "WLM-017",
+    "title": "Conversational cadence without drag",
+    "artifact_type": "internal message",
+    "expected_mode": "internal update",
+    "prompt": "Rewrite this internal note in Mike's voice: The same access issue came up in three client sessions. We could ask about tool access earlier in scoping, but the evidence is limited. Leave room for disagreement. Keep it conversational, neither clipped nor padded.",
+    "must_preserve": [
+      "same access issue in three client sessions",
+      "ask about tool access earlier in scoping",
+      "evidence is still limited",
+      "leave room for disagreement"
+    ],
+    "risk_checks": [
+      "Do not make three examples sound conclusive",
+      "Do not use clipped memo phrasing such as feels worth testing",
+      "Do not substitute a similarly compressed phrase such as seems worth testing",
+      "Use natural connective phrasing when it carries tentativeness, such as feels like it's worth testing",
+      "Do not add repeated explanation that makes the message slow to read",
+      "Keep the ask collaborative rather than accusatory"
+    ]
   }
 ]

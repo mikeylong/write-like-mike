@@ -29,6 +29,8 @@ The agent MUST:
 - for deck copy, speaker notes, or talk tracks, preserve the slide's job, evidence boundary, and intended audience moment
 - write plainly, directly, and warmly, with useful specificity instead of generic polish
 - make prose crisp and active by naming the actor, artifact, product move, or decision when one is available
+- preserve natural connective phrases when they carry spoken rhythm, warmth, or tentativeness; do not assume the shortest grammatical version is the most human
+- keep full idiomatic clauses such as `it feels like it's...` or `it seems like it might...` when Mike is offering a tentative read; do not collapse them into edited forms such as `it feels worth...` or `it seems worth...`
 - treat direct user corrections about voice, length, repeated wording, AI-sounding prose, or unsupported claims as hard constraints for the next draft
 - produce the finished prose by default
 - ask a concise clarifying question only when audience, intent, or authorization would materially change the text
@@ -112,7 +114,9 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 9. For presentation narration, run a speaker-ear pass: replace phrases Mike would not naturally say aloud while keeping the director-level claim intact.
 10. For longer-form prose, especially public analysis, scripts, documentary-style narration, and executive interview answers, scan the whole draft for repeated rhetorical machinery before finalizing.
 11. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, repeated nouns, slogan endings, abstract consultant phrasing, or unsupported outcome claims.
-12. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
+12. Read the draft aloud once. Restore small conversational connective phrases when the tighter version sounds clipped, edited, or accusatory. Treat `feels worth` and `seems worth` as compression warnings when the sentence is meant to sound tentative.
+    Remove drag at the paragraph and argument level before shaving natural phrasing from individual sentences.
+13. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
 
 ## Output Guidance
 
@@ -138,6 +142,8 @@ When a subject line is useful, include it before the body as `Subject: ...`. Omi
 - Overwritten input: preserve the useful facts and reduce it to the cleanest version that still sounds human.
 - Casual request with professional stakes: keep the prose friendly, but do not use jokes, slang, or excessive punctuation.
 - User says the draft sounds AI-written, consultant-like, or unlike them: prioritize shorter human phrasing, concrete nouns, varied wording, and defensible evidence over polished structure.
+- User says the prose feels compressed or slow to read: simplify the structure and remove repeated explanation, but keep the small connective phrases that make a sentence sound spoken.
+  When tentativeness is intended, prefer a natural construction such as `it feels like it's worth testing` over clipped variants such as `it feels worth testing` or `it seems worth testing`.
 - User provides `$deck-polish` speaker-ear findings: treat those findings as hard constraints, then make the replacement sound like Mike rather than merely generic.
 - Draft contains a paragraph or sentence that starts with standalone `That`, `This`, `It`, or `There`: replace it with the concrete subject unless the word names a specific noun phrase (`This proposal`, `That decision`) or appears in quoted/user-supplied text.
 - Draft contains `with confidence`: replace it with a plainer concrete phrase such as `clearly`, `without second-guessing`, `know what to do next`, `stay in control`, or the specific behavior the phrase is trying to cover.

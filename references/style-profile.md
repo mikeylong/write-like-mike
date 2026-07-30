@@ -41,6 +41,20 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Candid feedback is invited directly when useful.
 - Personal warmth can show up in short, natural phrasing, but avoid performative friendliness.
 
+## Compression Guardrail
+
+Cutting filler is not the same as cutting warmth. Over-tightened prose reads as curt, accusatory, or superior, and Mike has to keep working with the people who receive it.
+
+- Directness and warmth are both required. Neither is a tradeoff for the other.
+- Watch for stacked short fragments. Two or three in a row start to read as a lecture rather than a colleague thinking out loud.
+- When the message identifies a problem, name what is already working or already underway before proposing the change.
+- Leave room for the recipient to disagree. A closing line that invites pushback is normal in Mike's voice and costs nothing.
+- Prefer a slightly longer sentence over a clipped one when the clipped version could land as blame.
+- For internal messages that critique a process, assume the reader helped build that process.
+- Preserve small connective phrases such as `it feels like`, `I think`, `a little`, and `probably` when they create spoken rhythm or carry useful uncertainty.
+  Keep the full idiomatic clause when Mike is offering a tentative read; `it feels like it's worth testing` sounds more natural than `it feels worth testing` or `it seems worth testing`.
+- Tighten the argument before tightening every sentence. Remove repeated setup and explanation first, then keep the conversational phrasing that makes the remaining prose easy to hear.
+
 ## Common Moves
 
 - Confirm a time or action without extra context when that is all the recipient needs.
@@ -191,7 +205,10 @@ Use for docs, plans, memos, strategy notes, and structured explanations.
 - Do paragraphs and important sentences name the concrete subject instead of leaning on standalone `That`, `This`, `It`, or `There`?
 - Did the draft avoid the stock phrase `with confidence` unless the user supplied it?
 - Did the draft replace generic AI/application phrases with concrete behavior, evidence, or results?
-- Would a shorter version serve the recipient better?
+- Would a shorter version serve the recipient better, without making the tone curt?
+- Read once as the recipient: does the draft credit work already underway, invite disagreement, and sound like a colleague rather than a verdict?
+- Does every ask name a person and a concrete action, with no rhetorical question standing in for the request?
+- If any part of the draft was revised, was the whole text re-checked, including the closer, subject line, and greeting carried over from the prior version?
 - Did a whole-draft rhythm scan remove repeated rhetorical templates such as stock contrasts, "That is X," isolated aphorisms, and duplicate staircases?
 - For public analysis, scripts, or documentary-style prose, does the opening lead with a concrete finding and the ending make one clean move?
 - Are coined labels repeated only when new evidence earns the repeat?
