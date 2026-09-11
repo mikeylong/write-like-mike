@@ -52,6 +52,8 @@ A case fails regardless of total score if it:
 - ignores the requested artifact type
 - starts paragraphs with vague standalone `That`, `This`, `It`, or `There` when a concrete subject is available
 - uses the stock phrase `with confidence` when the user did not supply it
+- uses an em dash as punctuation
+- adds praise, credit, or context about the recipient's work or process that the prompt did not supply
 - leaves presentation robo-speak in deck copy or speaker notes when the prompt asks for Mike's voice
 - violates a `risk_checks` item in `cases.json`
 

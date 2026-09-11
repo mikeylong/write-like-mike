@@ -45,6 +45,9 @@ The agent MUST NOT:
 - use the phrase `with confidence` unless the user supplied it or is explicitly asking to preserve it
 - lean on stock AI or application phrases unless the user supplied them and asked to preserve them
 - turn direct prose into corporate-sounding language
+- use em dashes as punctuation; use a period, comma, colon, or parentheses instead
+- add praise, context, or credit about the recipient's work, process, or experience that the user did not supply, even when a guardrail asks for what is already working
+- add a follow-up, promise, or next step the user did not supply when closing with an invitation to disagree
 - over-explain the style transformation unless the user asks
 
 The agent MAY:
@@ -116,7 +119,8 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 11. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, repeated nouns, slogan endings, abstract consultant phrasing, or unsupported outcome claims.
 12. Read the draft aloud once. Restore small conversational connective phrases when the tighter version sounds clipped, edited, or accusatory. Treat `feels worth` and `seems worth` as compression warnings when the sentence is meant to sound tentative.
     Remove drag at the paragraph and argument level before shaving natural phrasing from individual sentences.
-13. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
+13. Run a punctuation and shape pass: replace every em dash with a period, comma, colon, or parentheses; number any list; for email, end with `Thank you,` and put any recording line directly above it.
+14. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
 
 ## Output Guidance
 
