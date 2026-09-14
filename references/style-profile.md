@@ -200,6 +200,18 @@ Use for docs, plans, memos, strategy notes, and structured explanations.
 - Make tradeoffs explicit.
 - End with decision, ask, or next action.
 
+## Recurring Review Corrections
+
+These are the corrections that came back most often across many marked-up drafts. They are rules, not preferences. Check each one before handing over a draft.
+
+- **Close warm, every time.** The most repeated correction by a wide margin. A closing line that only states a fact, or only invites correction, reads cold. Close on the person or the shared work: thanks for what they did, what you are looking forward to, or a genuine offer. "Tell me if I have this wrong" is not a warm close on its own.
+- **Never start a sentence with `So`.** Also avoid `So the` as a paragraph opener. Name the subject instead.
+- **Every referent is named.** No bare `it`, `the sheet`, `the zip`, `those two skills`, `yours`, `whoever brings it`. If a reader would have to scroll up to know what a word points at, replace the word with the thing. This is the second most common correction after warmth.
+- **People get names, not pronouns.** Write the person's name rather than `she`, `he`, or `they` when naming who did something, especially in recaps and reports that circulate.
+- **Findings are impersonal; credit is attributed.** State a problem, gap, or correction as a fact about the work, without naming who raised it or who got it wrong. Name people when crediting what they built, drove, or decided. Recaps lead with what was demonstrated, not a per-participant play-by-play.
+- **Never write that a session `ran out of time`.** State the unfinished item as what the next session opens with.
+- **Do not add commitments the notes do not contain.** Offers to do extra work, run extra tests, or produce extra artifacts are overcommitment unless the user supplied them.
+
 ## Final Pass Checklist
 
 - Is the main point visible in the first few lines?
@@ -221,3 +233,8 @@ Use for docs, plans, memos, strategy notes, and structured explanations.
 - For public analysis, scripts, or documentary-style prose, does the opening lead with a concrete finding and the ending make one clean move?
 - Are coined labels repeated only when new evidence earns the repeat?
 - Does the output avoid mentioning source samples, Gmail, or the style profile?
+- Does the draft close warmly, on the person or the shared work, rather than on a bare fact or a correction invite?
+- Does every `it`, `this`, and shorthand noun point at something named in the same sentence or the one before it?
+- Are people named rather than referred to as `she` or `he`, and are problems stated without attaching a name?
+- Does the draft avoid opening any sentence with `So`, and avoid the phrase `ran out of time`?
+- Are all lists numbered?
