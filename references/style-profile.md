@@ -29,6 +29,8 @@ This profile is a private synthesis from read-only review of sent, human-authore
 - Use plain sentence structure and concrete nouns.
 - Let important details sit in their own sentence or list item.
 - Use sentence fragments as a normal part of Mike's rhythm across writing formats. Fragments should land a concrete consequence, contrast, or named observation after the setup.
+- Never open a list item or a paragraph with a fragment that labels the sentence after it. "A quality bar that runs." sitting in front of the sentence that explains the quality bar is a heading, not writing, and a reader hears it as machine-written immediately. Open with the claim itself. The fragments that belong in Mike's rhythm land a consequence after a full sentence has done the setup, never before it.
+- Every sentence has to parse on one read. The usual failure is a modifier wedged between a subject and its verb, as in `The run grounded in the code named the integration directly`. Split the sentence or move the modifier. A vagueness check will not catch this, because each word is specific and the sentence is still hard to follow.
 - Start paragraphs and important sentences with the concrete subject when possible. Prefer `GC AI's move...` or `The design change...` over standalone bridge openers like `That feels...`, `This means...`, `It is...`, or `There is...`.
 - For public posts, do not force punchline fragments at the open or close. Use complete sentences when a fragment feels like a slogan, shorthand, or missing verb.
 - Use numbered lists, not bullets, for availability, options, requirements, TODOs, or grouped points in anything sent to someone else. On a call, "item 3" names one thing and a bullet does not. Numbering restarts per section.
@@ -48,6 +50,8 @@ This profile is a private synthesis from read-only review of sent, human-authore
 ## Compression Guardrail
 
 Cutting filler is not the same as cutting warmth. Over-tightened prose reads as curt, accusatory, or superior, and Mike has to keep working with the people who receive it.
+
+Compression is also the most common reason a draft gets called AI-written. Short summarized declaratives, stacked clauses, and stripped-down phrasing are what a reader points at when they say something does not sound like a person. When a sentence has been tightened past what Mike would say out loud, it is too tight, whatever the word count says.
 
 - Directness and warmth are both required. Neither is a tradeoff for the other.
 - Watch for stacked short fragments. Two or three in a row start to read as a lecture rather than a colleague thinking out loud.
@@ -196,6 +200,7 @@ Use when the user wants to open a conversation, ask for advice, explain intent, 
 Use for team notes, status updates, design reviews, plans, and comments.
 
 - Lead with what changed or what matters.
+- For a recap to a sponsor, a client executive, or your own leadership, lead with what went well before what needs attention. Assume nobody opens the attachment, so the wins belong in the body of the message. Frame the open issues as where support would help rather than as a list of gaps.
 - Separate facts from interpretation.
 - Make the next step explicit.
 - Avoid motivational filler.
@@ -219,6 +224,7 @@ These are the corrections that came back most often across many marked-up drafts
 - **Every referent is named.** No bare `it`, `the sheet`, `the zip`, `those two skills`, `yours`, `whoever brings it`. If a reader would have to scroll up to know what a word points at, replace the word with the thing. This is the second most common correction after warmth.
 - **People get names, not pronouns.** Write the person's name rather than `she`, `he`, or `they` when naming who did something, especially in recaps and reports that circulate.
 - **Findings are impersonal; credit is attributed.** State a problem, gap, or correction as a fact about the work, without naming who raised it or who got it wrong. Name people when crediting what they built, drove, or decided. Recaps lead with what was demonstrated, not a per-participant play-by-play.
+- **A recap leads with what went well.** Problems belong in the message, framed as where support would help, but they never open it and they never carry the whole of it. A reader should not have to open an attachment to find what the team accomplished.
 - **Never write that a session `ran out of time`.** State the unfinished item as what the next session opens with.
 - **Every factual claim is checked against a source before it ships.** The second most common correction. Dates, times and time-zone conversions, who sent or received what, who was in the room, whether a file was already provided, whether a decision was already settled, recording links and passcodes. Check the transcript, the thread, the calendar entry or the repo rather than inferring from context, and say what could not be verified instead of asserting it.
 - **Do not add commitments the notes do not contain.** Offers to do extra work, run extra tests, or produce extra artifacts are overcommitment unless the user supplied them.
@@ -250,3 +256,6 @@ These are the corrections that came back most often across many marked-up drafts
 - Does the draft avoid opening any sentence with `So`, and avoid the phrase `ran out of time`?
 - Are all lists numbered?
 - Is every date, time, name, attachment and prior-decision claim verified against a source rather than inferred?
+- Does every list item and paragraph open with the claim itself rather than a fragment that labels it?
+- Does every sentence parse on one read, with no modifier wedged between a subject and its verb?
+- For a recap, does the message body lead with what went well, with the open issues framed as where support would help?

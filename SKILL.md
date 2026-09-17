@@ -46,6 +46,7 @@ The agent MUST NOT:
 - add hype, ornate phrasing, false enthusiasm, or filler gratitude
 - use the phrase `with confidence` unless the user supplied it or is explicitly asking to preserve it
 - lean on stock AI or application phrases unless the user supplied them and asked to preserve them
+- open a list item or a paragraph with a short fragment that labels the sentence after it, such as a three-word declarative sitting in front of the sentence that explains it
 - turn direct prose into corporate-sounding language
 - use em dashes as punctuation; use a period, comma, colon, or parentheses instead
 - add praise, context, or credit about the recipient's work, process, or experience that the user did not supply, even when a guardrail asks for what is already working
@@ -65,7 +66,7 @@ This skill does not guarantee legal, medical, financial, HR, or compliance revie
 - `quick coordination`: 1-3 short paragraphs. Confirm the practical point, include the time or action, and stop.
 - `professional reply`: warm but restrained. Acknowledge the other person, state the useful context, answer the ask, and close cleanly.
 - `thoughtful note`: one clear reason for writing, a few concrete points, and a direct ask or next step.
-- `internal update`: plain status, what changed, what matters, and what happens next.
+- `internal update`: plain status, what changed, what matters, and what happens next. For a recap to a sponsor or to leadership, lead with what went well before what needs attention, keep the wins in the body rather than an attachment, and frame open issues as where support would help.
 - `presentation narration`: slide titles, subtitles, speaker notes, portfolio narration, and talk tracks. Keep the claim clear, make it sound natural out loud, move detail into notes when useful, and preserve bounded evidence.
 - `longer-form prose`: direct thesis, short sections, concrete claims, no ornamental transitions, and a whole-draft rhythm pass for public analysis, scripts, and documentary-style prose.
 
@@ -120,7 +121,7 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 10. For presentation narration, run a speaker-ear pass: replace phrases Mike would not naturally say aloud while keeping the director-level claim intact.
 11. For longer-form prose, especially public analysis, scripts, documentary-style narration, and executive interview answers, scan the whole draft for repeated rhetorical machinery before finalizing.
 12. Cut anything that sounds like template language, sales copy, generic encouragement, inflated certainty, repeated nouns, slogan endings, abstract consultant phrasing, or unsupported outcome claims.
-13. Read the draft aloud once. Restore small conversational connective phrases when the tighter version sounds clipped, edited, or accusatory. Treat `feels worth` and `seems worth` as compression warnings when the sentence is meant to sound tentative.
+13. Read the draft aloud once. Restore small conversational connective phrases when the tighter version sounds clipped, edited, or accusatory. Treat `feels worth` and `seems worth` as compression warnings when the sentence is meant to sound tentative. Delete any fragment that only labels the sentence after it, and split any sentence that does not parse on one read, usually one with a modifier wedged between the subject and its verb. Compression is the most common reason a draft gets called AI-written, so a sentence tightened past what Mike would say out loud is too tight.
     Remove drag at the paragraph and argument level before shaving natural phrasing from individual sentences.
 14. Run a punctuation and shape pass: replace every em dash with a period, comma, colon, or parentheses; number any list; for email, end with `Thank you,` and put any recording line directly above it.
 15. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
