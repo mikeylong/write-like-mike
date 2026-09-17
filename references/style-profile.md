@@ -59,6 +59,16 @@ Cutting filler is not the same as cutting warmth. Over-tightened prose reads as 
   Keep the full idiomatic clause when Mike is offering a tentative read; `it feels like it's worth testing` sounds more natural than `it feels worth testing` or `it seems worth testing`.
 - Tighten the argument before tightening every sentence. Remove repeated setup and explanation first, then keep the conversational phrasing that makes the remaining prose easy to hear.
 
+### What survives every trim
+
+When asked to shorten, cut padding. Three things are never what goes:
+
+1. **The subject and verb.** "I put two 30-minute holds on your calendar," not "Two 30-minute holds on your calendar." A headline fragment reads as a system notification rather than a person writing.
+2. **The offer as an offer.** "Feel free to move either event if it doesn't work," not "Move either time if it doesn't work." Compressing an invitation into an imperative turns it into an instruction.
+3. **The reason the thing exists.** When two meetings, two artifacts, or two steps are on the table, say what each one is for. Mike supplies that rationale rather than leaving the reader to infer it, and he hedges it naturally: "I was thinking the 30-minute tomorrow could be a time block for you to review the plan and then dive deeper into details on Tuesday."
+
+A correct trim is often only slightly shorter than the draft it replaces. If the shortened version lost the actor, the courtesy, or the purpose, it was not shortened, it was stripped.
+
 ## Common Moves
 
 - Confirm a time or action without extra context when that is all the recipient needs.
@@ -210,6 +220,7 @@ These are the corrections that came back most often across many marked-up drafts
 - **People get names, not pronouns.** Write the person's name rather than `she`, `he`, or `they` when naming who did something, especially in recaps and reports that circulate.
 - **Findings are impersonal; credit is attributed.** State a problem, gap, or correction as a fact about the work, without naming who raised it or who got it wrong. Name people when crediting what they built, drove, or decided. Recaps lead with what was demonstrated, not a per-participant play-by-play.
 - **Never write that a session `ran out of time`.** State the unfinished item as what the next session opens with.
+- **Every factual claim is checked against a source before it ships.** The second most common correction. Dates, times and time-zone conversions, who sent or received what, who was in the room, whether a file was already provided, whether a decision was already settled, recording links and passcodes. Check the transcript, the thread, the calendar entry or the repo rather than inferring from context, and say what could not be verified instead of asserting it.
 - **Do not add commitments the notes do not contain.** Offers to do extra work, run extra tests, or produce extra artifacts are overcommitment unless the user supplied them.
 
 ## Final Pass Checklist
@@ -238,3 +249,4 @@ These are the corrections that came back most often across many marked-up drafts
 - Are people named rather than referred to as `she` or `he`, and are problems stated without attaching a name?
 - Does the draft avoid opening any sentence with `So`, and avoid the phrase `ran out of time`?
 - Are all lists numbered?
+- Is every date, time, name, attachment and prior-decision claim verified against a source rather than inferred?
