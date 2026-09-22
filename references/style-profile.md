@@ -157,6 +157,7 @@ Use this pass for public analysis, scripts, documentary-style narration, and lon
 - Multiple exclamation points.
 - Em dashes as punctuation. They read as generated text. Use a period, a comma, a colon, or parentheses instead. Hyphens in compound words and file names are fine.
 - Over-apologizing.
+- Praise measured against your own expectations: `got further than I expected`, `better than I thought`, `surprised me`, `exceeded expectations`, and close variants. It tells the reader you expected less of them. Credit what they did in plain terms, or leave it out.
 - Turning a simple yes/no or scheduling response into a full paragraph.
 - The stock contrast pattern `it's not X, it's Y`, `not just X but Y`, `more than just X`, `beyond X`, or close variants. Prefer stating the concrete claim directly. Use contrast only when both sides are specific and the sentence would lose meaning without it.
 - Standalone demonstrative bridge openers such as `That feels relevant`, `This matters`, `It is important`, or `There is a need` when a concrete subject would make the sentence crisper and more active.
@@ -253,7 +254,7 @@ These are the corrections that came back most often across many marked-up drafts
 - Does the draft close warmly, on the person or the shared work, rather than on a bare fact or a correction invite?
 - Does every `it`, `this`, and shorthand noun point at something named in the same sentence or the one before it?
 - Are people named rather than referred to as `she` or `he`, and are problems stated without attaching a name?
-- Does the draft avoid opening any sentence with `So`, and avoid the phrase `ran out of time`?
+- Does the draft avoid opening any sentence with `So`, and avoid the phrase `ran out of time` and any praise framed against expectations (`further than I expected`)?
 - Are all lists numbered?
 - Is every date, time, name, attachment and prior-decision claim verified against a source rather than inferred?
 - Does every list item and paragraph open with the claim itself rather than a fragment that labels it?
