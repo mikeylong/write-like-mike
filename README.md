@@ -1,6 +1,6 @@
 # Write Like Mike
 
-Codex skill package for drafting and revising prose in Mike's voice.
+Skill package for drafting and revising prose in Mike's voice.
 
 The skill supports emails, messages, docs, memos, plans, comments, status updates, deck copy, speaker notes, talk tracks, and other prose. It uses a synthesized style profile plus optional Agent Memory retrieval as a filtered preference layer.
 
