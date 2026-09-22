@@ -34,7 +34,8 @@ The agent MUST:
 - treat direct user corrections about voice, length, repeated wording, AI-sounding prose, or unsupported claims as hard constraints for the next draft
 - produce the finished prose by default
 - ask a concise clarifying question only when audience, intent, or authorization would materially change the text
-- run the `specificity-pass` skill on every draft before any voice polish, and fix what it finds as content rather than styling around it
+- read and run the bundled [specificity-pass subskill](subskills/specificity-pass/SKILL.md) every time this skill is used, in every writing mode, including short replies and minor revisions
+- complete its mechanical scan and seven-pattern review before voice polish; fix content gaps using supplied facts, never invented detail
 - re-run `specificity-pass` and the final passes below against the complete text after any revision, however small
 - run a privacy check mentally before returning: no source-message references, no memory references, no claim that Gmail or Agent Memory was consulted, no raw examples, no invented private details
 
@@ -115,7 +116,8 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 4. Choose the writing mode and length from the audience and stakes.
 5. Draft with Mike's default pattern: direct opener, useful context, concrete next step, clean close.
 6. If the user has corrected a prior draft, apply that feedback before adding polish. Shorten first when they say it is too long; replace the specific phrases they objected to; do not defend or explain the prior wording unless asked. Shortening cuts padding, never the subject and verb, the warmth of an offer, or the reason each thing on the table exists. See "What survives every trim" in the style profile.
-7. Run `specificity-pass` on the draft. State the reader in one line first, run the skill's scan, and fix content gaps: unnamed referents, abstract nouns standing in for named things, one-sided comparisons, sentences that only parse with the previous one, headings the section does not deliver, repeated words, and claims made once and never carried through. Leave vocabulary the reader owns. Do this before the voice passes below, because voice work on a sentence about to be rewritten for content is wasted.
+7. Read and run [specificity-pass](subskills/specificity-pass/SKILL.md) on the complete draft before the voice passes below. Keep its reader calibration and findings internal unless the user requests a review.
+   Use the bundled `subskills/specificity-pass/scripts/scan.py`, resolved from this skill directory, and complete the seven-pattern review. Do not rely on a separately installed skill or skip the pass because the draft is short.
 8. Run a crisp-active pass: replace vague backward-pointing openers such as `That`, `This`, `It`, and `There` with the actual subject when the subject can be named; prefer active verbs when the actor, artifact, product move, or decision is clear.
 9. Run a stock-phrase pass: replace generic AI/application phrases with the specific evidence, action, artifact, or consequence.
 10. For presentation narration, run a speaker-ear pass: replace phrases Mike would not naturally say aloud while keeping the director-level claim intact.
@@ -124,7 +126,8 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 13. Read the draft aloud once. Restore small conversational connective phrases when the tighter version sounds clipped, edited, or accusatory. Treat `feels worth` and `seems worth` as compression warnings when the sentence is meant to sound tentative. Delete any fragment that only labels the sentence after it, and split any sentence that does not parse on one read, usually one with a modifier wedged between the subject and its verb. Compression is the most common reason a draft gets called AI-written, so a sentence tightened past what Mike would say out loud is too tight.
     Remove drag at the paragraph and argument level before shaving natural phrasing from individual sentences.
 14. Run a punctuation and shape pass: replace every em dash with a period, comma, colon, or parentheses; number any list; for email, end with `Thank you,` and put any recording line directly above it.
-15. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
+15. Re-run the bundled specificity pass against the complete final text after voice edits. If fixes change the prose, apply the affected voice checks and verify specificity again before returning it.
+16. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
 
 ## Output Guidance
 

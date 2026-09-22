@@ -13,6 +13,7 @@ Runtime memory retrieval can adjust tone and emphasis, but it must not introduce
 ## Package Contents
 
 - `SKILL.md`: core routing, behavior contract, writing modes, and workflow
+- `subskills/specificity-pass/`: mandatory specificity review and scanner, bundled for every draft and revision
 - `agents/openai.yaml`: Codex UI metadata
 - `references/style-profile.md`: synthesized writing style profile
 - `references/memory-refresh.md`: safe Agent Memory retrieval and refresh guidance
