@@ -223,6 +223,7 @@ These are the corrections that came back most often across many marked-up drafts
 - **Close warm, every time.** The most repeated correction by a wide margin. A closing line that only states a fact, or only invites correction, reads cold. Close on the person or the shared work: thanks for what they did, what you are looking forward to, or a genuine offer. "Tell me if I have this wrong" is not a warm close on its own.
 - **Never start a sentence with `So`.** Also avoid `So the` as a paragraph opener. Name the subject instead.
 - **Every referent is named.** No bare `it`, `the sheet`, `the zip`, `those two skills`, `yours`, `whoever brings it`. If a reader would have to scroll up to know what a word points at, replace the word with the thing. This is the second most common correction after warmth.
+- **Every artifact the email names is linked or attached.** A doc, folder, report, file or recording mentioned in the body gets its link inline, or the text says it is attached. If it only exists as someone's email attachment, say whose email and when. A reader should never have to go hunting for the thing being discussed.
 - **People get names, not pronouns.** Write the person's name rather than `she`, `he`, or `they` when naming who did something, especially in recaps and reports that circulate.
 - **Findings are impersonal; credit is attributed.** State a problem, gap, or correction as a fact about the work, without naming who raised it or who got it wrong. Name people when crediting what they built, drove, or decided. Recaps lead with what was demonstrated, not a per-participant play-by-play.
 - **A recap leads with what went well.** Problems belong in the message, framed as where support would help, but they never open it and they never carry the whole of it. A reader should not have to open an attachment to find what the team accomplished.
@@ -253,6 +254,7 @@ These are the corrections that came back most often across many marked-up drafts
 - Does the output avoid mentioning source samples, Gmail, or the style profile?
 - Does the draft close warmly, on the person or the shared work, rather than on a bare fact or a correction invite?
 - Does every `it`, `this`, and shorthand noun point at something named in the same sentence or the one before it?
+- Is every doc, folder, report, file or recording the draft names linked inline or stated as attached?
 - Are people named rather than referred to as `she` or `he`, and are problems stated without attaching a name?
 - Does the draft avoid opening any sentence with `So`, and avoid the phrase `ran out of time` and any praise framed against expectations (`further than I expected`)?
 - Are all lists numbered?
