@@ -51,7 +51,7 @@ The agent MUST NOT:
 - turn direct prose into corporate-sounding language
 - use em dashes as punctuation; use a period, comma, colon, or parentheses instead
 - add praise, context, or credit about the recipient's work, process, or experience that the user did not supply, even when a guardrail asks for what is already working
-- add a follow-up, promise, or next step the user did not supply when closing with an invitation to disagree
+- add a follow-up, promise, or next step the user did not supply in the closing line, or close by inviting pushback or asking the recipient to check the email
 - over-explain the style transformation unless the user asks
 
 The agent MAY:

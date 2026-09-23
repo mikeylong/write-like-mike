@@ -56,7 +56,7 @@ Compression is also the most common reason a draft gets called AI-written. Short
 - Directness and warmth are both required. Neither is a tradeoff for the other.
 - Watch for stacked short fragments. Two or three in a row start to read as a lecture rather than a colleague thinking out loud.
 - When the message identifies a problem and the notes say what is already working or already underway, name that before proposing the change. If the notes do not say, leave it out. Do not invent praise for a process or a person the user did not describe.
-- Leave room for the recipient to disagree. A closing line that invites pushback is normal in Mike's voice and costs nothing. It does not add a follow-up, a promise, or a next step the user did not supply.
+- Close plainly and warmly, without inviting pushback. For a session or engagement email the closer is "It was a pleasure working through this with you. Let me know if you have any questions." Never ask the recipient to check whether the email got things right ("let me know if I missed anything", "let me know if any of this misses what you took from the session"): it reads as unsure of the email and undercuts it. The closer does not add a follow-up, a promise, or a next step the user did not supply.
 - Prefer a slightly longer sentence over a clipped one when the clipped version could land as blame.
 - For internal messages that critique a process, assume the reader helped build that process.
 - Preserve small connective phrases such as `it feels like`, `I think`, `a little`, and `probably` when they create spoken rhythm or carry useful uncertainty.
@@ -242,7 +242,7 @@ These are the corrections that came back most often across many marked-up drafts
 - Did the draft avoid the stock phrase `with confidence` unless the user supplied it?
 - Did the draft replace generic AI/application phrases with concrete behavior, evidence, or results?
 - Would a shorter version serve the recipient better, without making the tone curt?
-- Read once as the recipient: does the draft credit only the work the notes describe, invite disagreement without adding a commitment, and sound like a colleague rather than a verdict?
+- Read once as the recipient: does the draft credit only the work the notes describe, close without asking the recipient to check it, and sound like a colleague rather than a verdict?
 - Does every claim about the recipient's work, process, or experience come from the user's notes?
 - Is the draft free of em dashes?
 - Are lists numbered, and does an email end with `Thank you,` with any recording line directly above it?
