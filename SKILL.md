@@ -10,10 +10,17 @@ Use this skill when the user asks to write like Mike, rewrite something in Mike'
 For presentation work, use this skill for the personal voice pass: slide copy, speaker notes, talk tracks, portfolio narration, and interview answers should sound like Mike.
 Preserve the deck's claims, evidence boundaries, and slide jobs. Generic deck polish and QA belong in `$deck-polish`; this skill makes the words sound like Mike after that structure is clear.
 
-This is a personal workflow skill. It uses the synthesized style profile in [references/style-profile.md](references/style-profile.md).
-The profile was derived from read-only sent-mail review and intentionally contains no raw source messages, recipients, exact snippets, or identifying examples.
+Write Like Mike is a personal workflow skill with a synthesized style profile derived from read-only sent-mail review. The profile contains no raw source messages, recipients, exact snippets, or identifying examples.
 
 Do not use this skill to invent personal facts, make commitments the user did not authorize, or impersonate the user outside the text artifact the user requested.
+
+## Resources
+
+Follow these loading rules in every writing mode, including short replies and minor revisions. Resolve paths from this skill directory; use the bundled specificity pass rather than a separately installed copy.
+
+1. [Style profile](references/style-profile.md): read before drafting or revising.
+2. [Memory guidance](references/memory-refresh.md): use after reading the style profile when memory tools are available and saved preferences or durable context would help.
+3. [Specificity pass](subskills/specificity-pass/SKILL.md): read and run the bundled [scanner](subskills/specificity-pass/scripts/scan.py) on the complete draft before voice polish and again on the final text after edits.
 
 ## Binding Contract
 
@@ -21,8 +28,6 @@ This skill produces finished prose in Mike's voice while preserving the user's f
 
 The agent MUST:
 
-- read [references/style-profile.md](references/style-profile.md) before drafting or revising
-- use Agent Memory as described in [references/memory-refresh.md](references/memory-refresh.md) when memory tools are available and the request would benefit from user preferences, tone corrections, channel norms, or durable context
 - infer the artifact type, audience, stakes, channel, and desired length from the request
 - choose one mode: `quick coordination`, `professional reply`, `thoughtful note`, `internal update`, `presentation narration`, or `longer-form prose`
 - preserve concrete facts, names, timing, commitments, constraints, and asks from the user input
@@ -34,9 +39,6 @@ The agent MUST:
 - treat direct user corrections about voice, length, repeated wording, AI-sounding prose, or unsupported claims as hard constraints for the next draft
 - produce the finished prose by default
 - ask a concise clarifying question only when audience, intent, or authorization would materially change the text
-- read and run the bundled [specificity-pass subskill](subskills/specificity-pass/SKILL.md) every time this skill is used, in every writing mode, including short replies and minor revisions
-- complete its mechanical scan and seven-pattern review before voice polish; fix content gaps using supplied facts, never invented detail
-- re-run `specificity-pass` and the final passes below against the complete text after any revision, however small
 - run a privacy check mentally before returning: no source-message references, no memory references, no claim that Gmail or Agent Memory was consulted, no raw examples, no invented private details
 
 The agent MUST NOT:
@@ -84,40 +86,16 @@ Treat these as avoid-by-default, not absolute banned words. If one appears, repl
 - Application claims: `perfect fit`, `aligns perfectly`, `proven track record`, `results-driven`, `passionate about`, `excited to apply`, `unique blend`.
 - Presentation robo-speak: `roadmap unit`, `capability primitives`, `action contract`, `system model`, `operating standard`, `operating mechanisms`, `pre-baked answer`, `agentic actions`.
 
-## Agent Memory Augmentation
-
-Agent Memory is an optional preference layer, not a source of prose to copy.
-
-When memory tools are available, run a focused `memory_search` after reading the style profile if the task would benefit from user-specific preferences, prior corrections, channel norms, audience context, or topic-specific durable facts.
-
-Use query terms that match the current task and artifact type, such as:
-
-- `writing style preference tone direct concise less corporate`
-- `rewrite in my voice make it more like me`
-- `email message memo status update prose preference`
-- the channel, audience, topic, or artifact type from the current request
-
-Apply precedence in this order:
-
-1. Current user instructions.
-2. Facts, names, dates, commitments, constraints, and asks supplied in the current request.
-3. Relevant Agent Memory facts that are durable, user-authored, or clearly user-approved.
-4. The static style profile.
-
-Use memory to adjust tone, emphasis, and defaults. Do not use memory to introduce facts, commitments, names, dates, private context, or claims not supplied for the current artifact.
-
-Ignore unrelated project facts, assistant-only prose, raw imported chat fragments, secrets, stale context, and one-off task details. If memory conflicts with the current request, follow the current request.
-
 ## Workflow
 
 1. Extract the user's actual message goal: reply, ask, update, introduction, memo, plan, comment, or rewrite.
 2. Lock the facts that cannot change: people, timing, commitments, constraints, requests, and any "do not mention" details.
-3. Pull only relevant, privacy-safe memory signals when Agent Memory is available.
+3. Apply the memory guidance from Resources when its retrieval conditions are met.
 4. Choose the writing mode and length from the audience and stakes.
 5. Draft with Mike's default pattern: direct opener, useful context, concrete next step, clean close.
 6. If the user has corrected a prior draft, apply that feedback before adding polish. Shorten first when they say it is too long; replace the specific phrases they objected to; do not defend or explain the prior wording unless asked. Shortening cuts padding, never the subject and verb, the warmth of an offer, or the reason each thing on the table exists. See "What survives every trim" in the style profile.
-7. Read and run [specificity-pass](subskills/specificity-pass/SKILL.md) on the complete draft before the voice passes below. Keep its reader calibration and findings internal unless the user requests a review.
-   Use the bundled `subskills/specificity-pass/scripts/scan.py`, resolved from this skill directory, and complete the seven-pattern review. Do not rely on a separately installed skill or skip the pass because the draft is short.
+7. Run the specificity pass from Resources on the complete draft before voice polish, including the mechanical scan and seven-pattern review.
+   Fix content gaps using supplied facts, never invented detail. Keep reader calibration and findings internal unless the user requests a review.
 8. Run a crisp-active pass: replace vague backward-pointing openers such as `That`, `This`, `It`, and `There` with the actual subject when the subject can be named; prefer active verbs when the actor, artifact, product move, or decision is clear.
 9. Run a stock-phrase pass: replace generic AI/application phrases with the specific evidence, action, artifact, or consequence.
 10. For presentation narration, run a speaker-ear pass: replace phrases Mike would not naturally say aloud while keeping the director-level claim intact.
@@ -126,7 +104,7 @@ Ignore unrelated project facts, assistant-only prose, raw imported chat fragment
 13. Read the draft aloud once. Restore small conversational connective phrases when the tighter version sounds clipped, edited, or accusatory. Treat `feels worth` and `seems worth` as compression warnings when the sentence is meant to sound tentative. Delete any fragment that only labels the sentence after it, and split any sentence that does not parse on one read, usually one with a modifier wedged between the subject and its verb. Compression is the most common reason a draft gets called AI-written, so a sentence tightened past what Mike would say out loud is too tight.
     Remove drag at the paragraph and argument level before shaving natural phrasing from individual sentences.
 14. Run a punctuation and shape pass: replace every em dash with a period, comma, colon, or parentheses; number any list; for email, end with `Thank you,` and put any recording line directly above it.
-15. Re-run the bundled specificity pass against the complete final text after voice edits. If fixes change the prose, apply the affected voice checks and verify specificity again before returning it.
+15. Repeat the specificity pass from Resources and the final voice checks on the complete text after any revision, however small. If fixes change the prose, re-run the affected voice checks and specificity pass before returning it.
 16. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
 
 ## Output Guidance
