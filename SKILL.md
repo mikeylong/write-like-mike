@@ -37,7 +37,7 @@ The agent MUST:
 - preserve natural connective phrases when they carry spoken rhythm, warmth, or tentativeness; do not assume the shortest grammatical version is the most human
 - keep full idiomatic clauses such as `it feels like it's...` or `it seems like it might...` when Mike is offering a tentative read; do not collapse them into edited forms such as `it feels worth...` or `it seems worth...`
 - treat direct user corrections about voice, length, repeated wording, AI-sounding prose, or unsupported claims as hard constraints for the next draft
-- produce the finished prose by default
+- produce the finished prose by default once the Output Check Loop passes
 - ask a concise clarifying question only when audience, intent, or authorization would materially change the text
 - run a privacy check mentally before returning: no source-message references, no memory references, no claim that Gmail or Agent Memory was consulted, no raw examples, no invented private details
 
@@ -104,8 +104,22 @@ Treat these as avoid-by-default, not absolute banned words. If one appears, repl
 13. Read the draft aloud once. Restore small conversational connective phrases when the tighter version sounds clipped, edited, or accusatory. Treat `feels worth` and `seems worth` as compression warnings when the sentence is meant to sound tentative. Delete any fragment that only labels the sentence after it, and split any sentence that does not parse on one read, usually one with a modifier wedged between the subject and its verb. Compression is the most common reason a draft gets called AI-written, so a sentence tightened past what Mike would say out loud is too tight.
     Remove drag at the paragraph and argument level before shaving natural phrasing from individual sentences.
 14. Run a punctuation and shape pass: replace every em dash with a period, comma, colon, or parentheses; number any list; for email, end with `Thank you,` and put any recording line directly above it.
-15. Repeat the specificity pass from Resources and the final voice checks on the complete text after any revision, however small. If fixes change the prose, re-run the affected voice checks and specificity pass before returning it.
+15. Run the Output Check Loop below on the complete candidate. Any subsequent edit, however small, requires another complete check.
 16. Verify the output does not mention Gmail, Agent Memory, source samples, private history, or details the user did not provide.
+
+## Output Check Loop
+
+Use the style profile's **Final Pass Checklist** as the checklist; do not create a second set of voice rules. Current user instructions take precedence.
+
+1. Run the bundled scanner on the exact candidate and review all seven specificity patterns. Judge each scanner finding against the reader's context; a finding is not automatically a failure, and zero findings do not establish a pass.
+2. Review every applicable Final Pass Checklist item against the complete candidate, including facts, authorization, privacy, voice, and channel fit.
+   Track `pass`, `fail`, or `not applicable` internally. Give skipped items a concrete reason; missing evidence for a required check is not a pass.
+3. If a check fails, fix the affected prose using supplied facts. After any edit, return to step 1 and review the whole candidate, including subject, greeting, body, links, and closer. Earlier passes do not cover edited text.
+4. Return the finished prose only when the latest candidate passes every applicable check. Keep the check record out of the prose unless the user requests it.
+
+Allow at most three repair rounds after the initial review for one response. Stop as soon as the candidate passes.
+If an essential fact, permission, or required link is missing, ask one focused question instead of guessing.
+If checks still fail after three repairs, explain the unresolved check briefly; do not label the draft as passed or return it as finished prose.
 
 ## Output Guidance
 
